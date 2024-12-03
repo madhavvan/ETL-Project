@@ -3,6 +3,6 @@
 ## Overview
 This page describes the BPMN model used for the ETL pipeline.
 
-![BPMN Diagram](../diagrams/bpmn.png)
+![BPMN Diagram](https://modeler.camunda.io/share/cb3c12e0-9a9f-4a13-a489-967c436eec2fg)
 
 [Back to Home](index.md)
