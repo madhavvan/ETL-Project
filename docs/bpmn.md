@@ -1,7 +1,7 @@
 # BPMN Model
 
 ## Overview
-[This page describes the BPMN model used for the ETL pipeline.]
+This page describes the BPMN model used for the ETL pipeline
 
 ![BPMN Diagram](../diagrams/bpmn_diagram.jpg)
 
