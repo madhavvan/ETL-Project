@@ -3,5 +3,7 @@
 ## Overview
 [This page describes the BPMN model used for the ETL pipeline.](bpmn_diagram.png)
 
-[View the BPMN Model Online](bpmn_diagram.png)
+![BPMN Diagram](../diagrams/bpmn_diagram.jpg)
+
+The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.
 [Back to Home](index.md)
