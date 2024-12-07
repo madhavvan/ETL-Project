@@ -149,7 +149,12 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         <p>This diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
         <button class="button">Learn More</button>
     </div>
-
+    <!-- Another Card -->
+    <div class="card">
+        <h3>Team Contributions</h3>
+        <p>Explore the contributions of each team member in making this ETL project successful.</p>
+        <button class="button">View Team</button>
+    </div>
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 ETL Project. All Rights Reserved.</p>
