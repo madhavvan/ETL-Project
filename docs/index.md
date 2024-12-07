@@ -32,75 +32,104 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETL Project Overview</title>
 
-    <!-- Inline CSS for Lavender Theme -->
+    <!-- Inline CSS for Lavender Theme with Card Design -->
     <style>
-        /* General Page Styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #E6E6FA;  /* Lavender background */
-            color: #4B0082;  /* Indigo text color (complementary to lavender) */
+            color: #4B0082;  /* Indigo text */
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
 
-        /* Header Styling */
         h1 {
-            color: #8A2BE2;  /* Purple color for the heading */
+            color: #8A2BE2;  /* Purple */
             text-align: center;
+            margin-top: 50px;
         }
 
-        /* Navigation Links */
         nav a {
             text-decoration: none;
-            color: #4B0082;  /* Indigo for text */
+            color: #4B0082;
             margin: 0 15px;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #8A2BE2;  /* Purple on hover */
+            color: #8A2BE2;
         }
 
-        /* Image Styling */
-        img {
-            max-width: 100%;  /* Responsive image */
-            height: auto;
+        /* Card Design */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: #8A2BE2;
+            text-align: center;
+        }
+
+        .card p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .button {
+            background-color: #8A2BE2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
             display: block;
-            margin: 20px auto;  /* Center image */
+            margin: 20px auto;
         }
 
-        /* Links */
-        a {
-            text-decoration: none;
-            color: #8A2BE2;  /* Purple for links */
-        }
-
-        a:hover {
-            color: #4B0082;  /* Darker purple on hover */
+        .button:hover {
+            background-color: #4B0082;  /* Darker purple on hover */
         }
     </style>
 </head>
 <body>
     <h1>ETL Project Overview</h1>
-    <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
 
-    <!-- Navigation Links -->
     <nav>
-        <a href="{{ url_for('home') }}">Home</a> | 
-        <a href="{{ url_for('bpmn') }}">BPMN Model</a> | 
-        <a href="{{ url_for('use_case') }}">Use Case Model</a> | 
-        <a href="{{ url_for('etl_pipeline') }}">ETL Pipeline</a> | 
-        <a href="{{ url_for('insights') }}">Insights</a> | 
-        <a href="{{ url_for('team') }}">Team Contributions</a> | 
-        <a href="{{ url_for('about') }}">About</a>
+        <a href="#">Home</a> | 
+        <a href="#">BPMN Model</a> | 
+        <a href="#">Use Case Model</a> | 
+        <a href="#">ETL Pipeline</a> | 
+        <a href="#">Insights</a> | 
+        <a href="#">Team Contributions</a> | 
+        <a href="#">About</a>
     </nav>
 
-    <!-- Display Image from Static Folder -->
-    <img src="{{ url_for('static', filename='img.png') }}" alt="ETL Process Diagram">
+    <!-- Card with Content -->
+    <div class="card">
+        <img src="{{ url_for('static', filename='img.png') }}" alt="ETL Process Diagram">
+        <h3>ETL Process Overview</h3>
+        <p>This diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
+        <button class="button">Learn More</button>
+    </div>
 
-    <p>The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
+    <!-- Another Card Example -->
+    <div class="card">
+        <h3>Team Contributions</h3>
+        <p>Explore the contributions of each team member in making this ETL project successful.</p>
+        <button class="button">View Team</button>
+    </div>
 
-    <a href="{{ url_for('home') }}">Back to Home</a>
 </body>
 </html>
