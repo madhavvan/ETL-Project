@@ -6,5 +6,5 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 - [BPMN Model](bpmn.md)
 - [Use Case Diagram](use_case.md)
 - [ETL Pipeline Documentation](etl_pipeline.md)
-- [insights](insights.md)
-- [team contributions](team_contributions.md)
+- [Insights](insights.md)
+- [Team Contributions](team_contributions.md)
