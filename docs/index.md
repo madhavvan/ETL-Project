@@ -7,21 +7,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
-    <!-- High-Energy Highlight Section Above the Image -->
-    <div class="highlight-section">
-        <h1>ETL Process Overview</h1>
-        <p>This diagram illustrates the extraction, transformation, and loading (ETL) process, detailing key stages and decision points.</p>
-        <button class="button">Learn More</button>
-    </div>
 
-    <!-- Image Section Below -->
-    <div class="image-section"></div>
-    <!-- Card with Professional Background -->
-    <div class="card">
-        <h3>ETL Process Overview</h3>
-        <p>This diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
-        <button class="button">Learn More</button>
-    </div>
 ![img_2.png](img_2.png)
 
 ## ETL Project Documentation
@@ -141,6 +127,21 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 </head>
 <body>
 
+    <!-- High-Energy Highlight Section Above the Image -->
+    <div class="highlight-section">
+        <h1>ETL Process Overview</h1>
+        <p>This diagram illustrates the extraction, transformation, and loading (ETL) process, detailing key stages and decision points.</p>
+        <button class="button">Learn More</button>
+    </div>
+
+    <!-- Image Section Below -->
+    <div class="image-section"></div>
+    <!-- Card with Professional Background -->
+    <div class="card">
+        <h3>ETL Process Overview</h3>
+        <p>This diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
+        <button class="button">Learn More</button>
+    </div>
     <!-- Another Card -->
     <div class="card">
         <h3>Team Contributions</h3>
