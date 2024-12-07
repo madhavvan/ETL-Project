@@ -61,7 +61,7 @@
         <h1>ETL Project Overview</h1>
         <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
 
-        <p><a href="index.md">Home</a> | <a href="![img_3.png](img_3.png)">BPMN Model</a> | <a href="use_case.md">Use Case Model</a> | <a href="etl_pipeline.md">ETL Pipeline</a> | <a href="insights.md">Insights</a> | <a href="team.md">Team Contributions</a> | <a href="about.md">About</a></p>
+        <p><a href="index.md">Home</a> | <a href="![img_1.png](img_1.png)">BPMN Model</a> | <a href="use_case.md">Use Case Model</a> | <a href="etl_pipeline.md">ETL Pipeline</a> | <a href="insights.md">Insights</a> | <a href="team.md">Team Contributions</a> | <a href="about.md">About</a></p>
     </div>
 
 </body>
