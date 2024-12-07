@@ -10,38 +10,6 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 
 ![img_2.png](img_2.png)
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETL Project Overview</title>
-        /* Floating Animation */
-        @keyframes float {
-            0% {
-                transform: translateY(0) translateX(-50%);
-            }
-            50% {
-                transform: translateY(-30px) translateX(-50%);
-            }
-            100% {
-                transform: translateY(0) translateX(-50%);
-            }
-        }
-</head>
-<body>
-
-
-    <!-- Card with Professional Background -->
-    <div class="card">
-<h3>ETL Process Overview</h3>
-<p>[Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)</p>
-<button class="button">Learn More</button>
-    </div>
-
-</head>
-<body>
-
 
 ## ETL Project Documentation
 My ETL Project aims to get data from the OpenEMR FHIR API, does some transformation and then load the data to another FHIR API
@@ -219,8 +187,6 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         <button class="button">Learn More</button>
     </div>
 
-    <!-- Image Section Below (This section is now a placeholder, no image tag here) -->
-    <div class="image-section"></div>
 
     <!-- Card with Professional Background -->
     <div class="card">
