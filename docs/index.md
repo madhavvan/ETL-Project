@@ -32,13 +32,13 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETL Project Overview</title>
 
-    <!-- Inline CSS for theme change -->
+    <!-- Inline CSS for Lavender Theme -->
     <style>
         /* General Page Styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;  /* Light grey background */
-            color: #333;  /* Dark text */
+            background-color: #E6E6FA;  /* Lavender background */
+            color: #4B0082;  /* Indigo text color (complementary to lavender) */
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -46,20 +46,20 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
         /* Header Styling */
         h1 {
-            color: #4CAF50;  /* Green color */
+            color: #8A2BE2;  /* Purple color for the heading */
             text-align: center;
         }
 
         /* Navigation Links */
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #4B0082;  /* Indigo for text */
             margin: 0 15px;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #4CAF50;  /* Green on hover */
+            color: #8A2BE2;  /* Purple on hover */
         }
 
         /* Image Styling */
@@ -73,11 +73,11 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         /* Links */
         a {
             text-decoration: none;
-            color: #4CAF50;
+            color: #8A2BE2;  /* Purple for links */
         }
 
         a:hover {
-            color: #333;
+            color: #4B0082;  /* Darker purple on hover */
         }
     </style>
 </head>
