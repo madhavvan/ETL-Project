@@ -36,72 +36,41 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #E6E6FA 30%, #D8BFD8 70%);
-            color: #4B0082;
+            background-color: #E6E6FA;  /* Lavender background */
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
 
-        h1 {
-            color: #8A2BE2;
+        /* High-Energy Gradient Section Above the Image */
+        .highlight-section {
+            background: linear-gradient(45deg, #8A2BE2, #4B0082, #D8BFD8); /* Gradient background */
+            color: white;
+            padding: 100px 20px;
             text-align: center;
-            margin-top: 50px;
-            font-size: 3em;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            margin: 50px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-section h1 {
+            font-size: 4em;
             font-weight: bold;
-        }
-
-        nav {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #4B0082;
-            margin: 0 15px;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #8A2BE2;
-            text-decoration: underline;
-        }
-
-        /* Card with Professional Background */
-        .card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.2)), url('https://via.placeholder.com/1500x500'); /* Background with gradient overlay */
-            background-size: cover;
-            background-position: center;
-            border-radius: 15px;
-            padding: 40px;
-            margin: 30px auto;
-            width: 80%;
-            max-width: 700px;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            color: #fff; /* White text to contrast with darker background */
-            text-align: center;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .card h3 {
-            font-size: 2em;
-            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 15px rgba(138, 43, 226, 0.8); /* Neon glow effect */
             margin-bottom: 20px;
         }
 
-        .card p {
+        .highlight-section p {
             font-size: 1.2em;
-            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
-        .button {
+        .highlight-section .button {
             background-color: #8A2BE2;
             color: white;
             padding: 12px 30px;
@@ -109,40 +78,64 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             border-radius: 30px;
             font-size: 1.2em;
             cursor: pointer;
-            display: inline-block;
-            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
-        .button:hover {
-            background-color: #4B0082;
+        .highlight-section .button:hover {
+            background-color: #4B0082; /* Darker purple on hover */
+            transform: scale(1.1);
         }
 
-        /* Footer Styling */
-        footer {
-            background-color: #4B0082;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 1.2em;
-            margin-top: 50px;
+        /* Image Styling */
+        .image-section {
+            background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+            height: 400px;
+            border-radius: 10px;
+            margin-top: -50px;  /* Pull image up to overlap the highlighted section */
+        }
+
+        /* Animated Floating Effect */
+        .highlight-section::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(-50%);
+            }
+            50% {
+                transform: translateY(-30px) translateX(-50%);
+            }
+            100% {
+                transform: translateY(0) translateX(-50%);
+            }
         }
 
     </style>
 </head>
 <body>
 
-    <h1>ETL Project Overview</h1>
+    <!-- High-Energy Highlight Section Above the Image -->
+    <div class="highlight-section">
+        <h1>ETL Process Overview</h1>
+        <p>This diagram illustrates the extraction, transformation, and loading (ETL) process, detailing key stages and decision points.</p>
+        <button class="button">Learn More</button>
+    </div>
 
-    <nav>
-        <a href="#">Home</a> | 
-        <a href="#">BPMN Model</a> | 
-        <a href="#">Use Case Model</a> | 
-        <a href="#">ETL Pipeline</a> | 
-        <a href="#">Insights</a> | 
-        <a href="#">Team Contributions</a> | 
-        <a href="#">About</a>
-    </nav>
-
+    <!-- Image Section Below -->
+    <div class="image-section"></div>
     <!-- Card with Professional Background -->
     <div class="card">
         <h3>ETL Process Overview</h3>
@@ -162,3 +155,8 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
 </body>
 </html>
+
+
+
+
+
