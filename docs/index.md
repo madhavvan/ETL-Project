@@ -36,7 +36,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #E6E6FA 30%, #D8BFD8 70%);  /* Lavender gradient */
+            background: linear-gradient(135deg, #E6E6FA 30%, #D8BFD8 70%);
             color: #4B0082;
             margin: 0;
             padding: 0;
@@ -44,7 +44,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         }
 
         h1 {
-            color: #8A2BE2; /* Purple color for title */
+            color: #8A2BE2;
             text-align: center;
             margin-top: 50px;
             font-size: 3em;
@@ -69,16 +69,20 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             text-decoration: underline;
         }
 
-        /* Card Design */
+        /* Card with Professional Background */
         .card {
-            background-color: white;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.2)), url('https://via.placeholder.com/1500x500'); /* Background with gradient overlay */
+            background-size: cover;
+            background-position: center;
             border-radius: 15px;
-            padding: 20px;
+            padding: 40px;
             margin: 30px auto;
             width: 80%;
             max-width: 700px;
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #fff; /* White text to contrast with darker background */
+            text-align: center;
         }
 
         .card:hover {
@@ -86,23 +90,15 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
         }
 
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
         .card h3 {
-            color: #8A2BE2;
-            text-align: center;
             font-size: 2em;
+            color: #fff;
             margin-bottom: 20px;
         }
 
         .card p {
-            font-size: 1.1em;
-            color: #333;
-            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
         }
 
         .button {
@@ -113,8 +109,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             border-radius: 30px;
             font-size: 1.2em;
             cursor: pointer;
-            display: block;
-            margin: 20px auto;
+            display: inline-block;
             transition: background-color 0.3s ease;
         }
 
@@ -131,14 +126,13 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             font-size: 1.2em;
             margin-top: 50px;
         }
+
     </style>
 </head>
 <body>
 
-    <!-- Title Section -->
     <h1>ETL Project Overview</h1>
 
-    <!-- Navigation -->
     <nav>
         <a href="#">Home</a> | 
         <a href="#">BPMN Model</a> | 
@@ -149,19 +143,11 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         <a href="#">About</a>
     </nav>
 
-    <!-- Card with Content -->
+    <!-- Card with Professional Background -->
     <div class="card">
-        <img src="{{ url_for('static', filename='img.png') }}" alt="ETL Process Diagram">
         <h3>ETL Process Overview</h3>
         <p>This diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
         <button class="button">Learn More</button>
-    </div>
-
-    <!-- Another Card -->
-    <div class="card">
-        <h3>Team Contributions</h3>
-        <p>Explore the contributions of each team member in making this ETL project successful.</p>
-        <button class="button">View Team</button>
     </div>
 
     <!-- Footer Section -->
