@@ -32,80 +32,113 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETL Project Overview</title>
 
-    <!-- Inline CSS for Lavender Theme with Card Design -->
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #E6E6FA;  /* Lavender background */
-            color: #4B0082;  /* Indigo text */
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #E6E6FA 30%, #D8BFD8 70%);  /* Lavender gradient */
+            color: #4B0082;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
 
         h1 {
-            color: #8A2BE2;  /* Purple */
+            color: #8A2BE2; /* Purple color for title */
             text-align: center;
             margin-top: 50px;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        nav {
+            text-align: center;
+            margin: 30px 0;
         }
 
         nav a {
             text-decoration: none;
             color: #4B0082;
             margin: 0 15px;
+            font-size: 1.2em;
             font-weight: bold;
         }
 
         nav a:hover {
             color: #8A2BE2;
+            text-decoration: underline;
         }
 
         /* Card Design */
         .card {
             background-color: white;
-            border-radius: 10px;
+            border-radius: 15px;
             padding: 20px;
-            margin: 20px auto;
+            margin: 30px auto;
             width: 80%;
-            max-width: 600px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
         }
 
         .card img {
             width: 100%;
             border-radius: 10px;
+            margin-bottom: 20px;
         }
 
         .card h3 {
             color: #8A2BE2;
             text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
 
         .card p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: #333;
+            text-align: center;
         }
 
         .button {
             background-color: #8A2BE2;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 30px;
             border: none;
-            border-radius: 5px;
-            text-align: center;
+            border-radius: 30px;
+            font-size: 1.2em;
             cursor: pointer;
             display: block;
             margin: 20px auto;
+            transition: background-color 0.3s ease;
         }
 
         .button:hover {
-            background-color: #4B0082;  /* Darker purple on hover */
+            background-color: #4B0082;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #4B0082;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Title Section -->
     <h1>ETL Project Overview</h1>
 
+    <!-- Navigation -->
     <nav>
         <a href="#">Home</a> | 
         <a href="#">BPMN Model</a> | 
@@ -124,12 +157,17 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         <button class="button">Learn More</button>
     </div>
 
-    <!-- Another Card Example -->
+    <!-- Another Card -->
     <div class="card">
         <h3>Team Contributions</h3>
         <p>Explore the contributions of each team member in making this ETL project successful.</p>
         <button class="button">View Team</button>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ETL Project. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
