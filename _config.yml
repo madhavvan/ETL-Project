@@ -1,3 +1,5 @@
-theme: jekyll-theme-cayman
-title: Sample Project Website
-description: The purpose of this website is to provide a demo website for students.
+title: Slate theme
+description: Slate is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-slate
