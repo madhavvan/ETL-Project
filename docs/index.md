@@ -23,3 +23,84 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.
 These cases are perfectly simple and easy to distinguish.
 In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETL Project Overview</title>
+
+    <!-- Inline CSS for theme change -->
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;  /* Light grey background */
+            color: #333;  /* Dark text */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        h1 {
+            color: #4CAF50;  /* Green color */
+            text-align: center;
+        }
+
+        /* Navigation Links */
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4CAF50;  /* Green on hover */
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 100%;  /* Responsive image */
+            height: auto;
+            display: block;
+            margin: 20px auto;  /* Center image */
+        }
+
+        /* Links */
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>ETL Project Overview</h1>
+    <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
+
+    <!-- Navigation Links -->
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> | 
+        <a href="{{ url_for('bpmn') }}">BPMN Model</a> | 
+        <a href="{{ url_for('use_case') }}">Use Case Model</a> | 
+        <a href="{{ url_for('etl_pipeline') }}">ETL Pipeline</a> | 
+        <a href="{{ url_for('insights') }}">Insights</a> | 
+        <a href="{{ url_for('team') }}">Team Contributions</a> | 
+        <a href="{{ url_for('about') }}">About</a>
+    </nav>
+
+    <!-- Display Image from Static Folder -->
+    <img src="{{ url_for('static', filename='img.png') }}" alt="ETL Process Diagram">
+
+    <p>The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
+
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
