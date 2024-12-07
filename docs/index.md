@@ -88,9 +88,10 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             transform: scale(1.1);
         }
 
-        /* Image Styling */
+        /* Image Section - Full Width */
         .image-section {
             background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+            width: 100%;  /* Full width of the page */
             height: 400px;
             border-radius: 10px;
             margin-top: -50px;  /* Pull image up to overlap the highlighted section */
@@ -123,6 +124,57 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             }
         }
 
+        /* Card Design */
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px auto;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 2em;
+            color: #8A2BE2;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .card .button {
+            background-color: #8A2BE2;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .card .button:hover {
+            background-color: #4B0082; /* Darker purple on hover */
+            transform: scale(1.1);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #4B0082;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -134,20 +186,23 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         <button class="button">Learn More</button>
     </div>
 
-    <!-- Image Section Below -->
+    <!-- Image Section Below - Full Width -->
     <div class="image-section"></div>
+
     <!-- Card with Professional Background -->
     <div class="card">
         <h3>ETL Process Overview</h3>
         <p>This diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
         <button class="button">Learn More</button>
     </div>
+
     <!-- Another Card -->
     <div class="card">
         <h3>Team Contributions</h3>
         <p>Explore the contributions of each team member in making this ETL project successful.</p>
         <button class="button">View Team</button>
     </div>
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 ETL Project. All Rights Reserved.</p>
@@ -155,8 +210,3 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
 </body>
 </html>
-
-
-
-
-
