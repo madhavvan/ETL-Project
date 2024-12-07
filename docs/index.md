@@ -9,7 +9,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 =======
 
 ![img_2.png](img_2.png)
-hello
+
 
 ## ETL Project Documentation
 My ETL Project aims to get data from the OpenEMR FHIR API, does some transformation and then load the data to another FHIR API
@@ -89,7 +89,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             transform: scale(1.1);
         }
 
-        /* Image Section - Full Width */
+        /* Image Section - Full Width (Removed the image) */
         .image-section {
             background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
             width: 100%;  /* Full width of the page */
@@ -187,7 +187,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         <button class="button">Learn More</button>
     </div>
 
-    <!-- Image Section Below - Full Width -->
+    <!-- Image Section Below (This section is now a placeholder, no image tag here) -->
     <div class="image-section"></div>
 
     <!-- Card with Professional Background -->
