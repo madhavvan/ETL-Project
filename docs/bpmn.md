@@ -9,11 +9,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 =======
 
 
-[//]: # (![img.png]&#40;img.png&#41;)
-
-[//]: # (<img src="{{ url_for&#40;'static', filename='img.png'&#41; }}" alt="BPMN Diagram" width="500" height="auto">)
-
-![ETL Process Diagram](static/img_1.png)
+![img.png](img.png)
 
 The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.
 [Back to Home](index.md)
