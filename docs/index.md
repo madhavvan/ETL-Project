@@ -1,12 +1,72 @@
-# ETL Project Overview
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETL Project Overview</title>
+    <style>
+        /* Apply to the container section for ETL Project Overview */
+        #etl-project-overview {
+            background: linear-gradient(45deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+            background-size: 400% 400%;
+            animation: gradientAnimation 5s ease infinite;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.
+        /* Animation for background gradient */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
+        /* Highlighting text */
+        #etl-project-overview h1 {
+            font-size: 36px;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
 
+        /* Navigation links styling */
+        #etl-project-overview a {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
 
+        #etl-project-overview a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
 
-[Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
-=======
+    <div id="etl-project-overview">
+        <h1>ETL Project Overview</h1>
+        <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
+
+        <p><a href="index.md">Home</a> | <a href="bpmn.md">BPMN Model</a> | <a href="use_case.md">Use Case Model</a> | <a href="etl_pipeline.md">ETL Pipeline</a> | <a href="insights.md">Insights</a> | <a href="team.md">Team Contributions</a> | <a href="about.md">About</a></p>
+    </div>
+
+</body>
+</html>
+
 
 ![img_2.png](img_2.png)
 
