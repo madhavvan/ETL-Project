@@ -9,7 +9,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 =======
 
 
-<img alt="img.png" height="500" src="img.png" width="600"/>
+<img alt="img.png" height="500" src="img.png" width="800"/>
 
 The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.
 [Back to Home](index.md)
