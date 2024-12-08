@@ -91,7 +91,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
         /* Image Section - Full Width (Removed the image) */
         .image-section {
-            background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+            background: url('https://via.placeholder.com/1000x500') center/cover no-repeat;
             width: 100%;  /* Full width of the page */
             height: 400px;
             border-radius: 10px;
