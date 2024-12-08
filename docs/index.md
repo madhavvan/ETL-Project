@@ -131,8 +131,8 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             border-radius: 15px;
             padding: 20px;
             margin: 30px auto;
-            width: 80%;
-            max-width: 700px;
+            width: 100%;
+            max-width: 900px;
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
             text-align: center;
         }
