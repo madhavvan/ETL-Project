@@ -188,13 +188,6 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
     </div>
 
 
-    <!-- Card with Professional Background -->
-    <div class="card">
-        <h3>ETL Process Overview</h3>
-        <p>This diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
-        <button class="button">Learn More</button>
-    </div>
-
     <!-- Another Card -->
     <div class="card">
         <h3>Team Contributions</h3>
