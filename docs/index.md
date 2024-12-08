@@ -36,7 +36,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
     <style>
         /* General Styling */
         body {
-            font-family: 'Times New Roman', sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #E6E6FA;  /* Lavender background */
             margin: 0;
             padding: 0;
