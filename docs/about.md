@@ -5,11 +5,8 @@
 =======
 
 
-<img alt="img_1.png" height="1000" src="img_1.png" width="500"/>
-<img alt="img_1.png" height="1000" src="img_1.png" width="500"/>
-<img alt="img_1.png" height="1000" src="img_1.png" width="500"/>
-<img alt="img_1.png" height="1000" src="img_1.png" width="500"/>
-<img alt="img_1.png" height="1000" src="img_1.png" width="500"/>
+<img alt="img_1.png" height="1000" src="img_1.png" width="500"/> | <img alt="img_1.png" height="1000" src="img_1.png" width="500"/>
+
 
 <!DOCTYPE html>
 <html lang="en">
