@@ -69,21 +69,6 @@
             min-height: 200vh; /* Ensures scrolling is possible */
         }
 
-   
-
-
-
-
-        /* Animated Glow Borders */
-        @keyframes move {
-            0%, 100% {
-                transform: scale(1) translate(0, 0);
-            }
-            50% {
-                transform: scale(1.2) translate(50px, 50px);
-            }
-        }
-
     </style>
 </head>
 <body>
