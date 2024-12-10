@@ -60,7 +60,7 @@
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: #E6E6FA; 
+            background: #4B0082; 
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -71,7 +71,7 @@
         /* Header Styles */
         h1 {
             font-size: 2.8rem;
-            color: #4B0082;
+            color: #E6E6FA;
             text-align: center;
             margin-bottom: 20px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
