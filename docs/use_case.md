@@ -29,7 +29,7 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #E6E6FA;  /* Lavender background */
+            background-color: #0000FF;  /* Lavender background */
             margin: 0;
             padding: 0;
             line-height: 1.6;
