@@ -38,58 +38,49 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             padding: 0;
             line-height: 1.6;
             color: #333;
-            position: relative;
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
-        /* Wavy Border Styling */
-        body::before,
-        body::after {
+        /* Wavy Border Effect */
+        .wavy-border {
+            position: relative;
+            padding: 40px 20px;
+            margin: 20px auto;
+            background: #FFFFFF; /* White background for content */
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 1200px;
+            z-index: 1;
+        }
+
+        .wavy-border::before,
+        .wavy-border::after {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            right: 0;
+            bottom: 0;
             z-index: -1;
-            background: linear-gradient(to right, #4B0082, #8A2BE2);
-            mask-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/Wave-pattern.png');
-            -webkit-mask-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/Wave-pattern.png');
-            mask-size: 40%;
-            -webkit-mask-size: 40%;
-            mask-repeat: repeat;
-            -webkit-mask-repeat: repeat;
-        }
-
-        /* Content Box Styling */
-        .content {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            background: #FFFFFF; /* White background */
+            background: linear-gradient(90deg, #4B0082, #8A2BE2);
+            mask-image: repeating-radial-gradient(circle, transparent, transparent 10px, white 10px, white 20px);
+            -webkit-mask-image: repeating-radial-gradient(circle, transparent, transparent 10px, white 10px, white 20px);
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            text-align: center;
         }
 
-        h1 {
-            font-size: 2.8rem;
-            color: #4B0082; /* Deep violet */
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        .wavy-border::before {
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
         }
 
-        h2 {
-            font-size: 2rem;
-            color: #4B0082; /* Deep violet */
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: #333;
-            margin-bottom: 20px;
-            line-height: 1.6;
+        .wavy-border::after {
+            top: -15px;
+            left: -15px;
+            right: -15px;
+            bottom: -15px;
+            opacity: 0.7;
         }
 
         /* Navigation Bar */
@@ -116,7 +107,30 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             color: #FFD700; /* Gold hover effect */
         }
 
-        /* Footer Styling */
+        /* Header Styles */
+        h1 {
+            font-size: 2.8rem;
+            color: #4B0082;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #8A2BE2;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #333;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
@@ -125,10 +139,6 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             margin-top: 40px;
             font-size: 1rem;
             border-radius: 0 0 10px 10px;
-        }
-
-        footer p {
-            margin: 0;
         }
     </style>
 </head>
@@ -144,12 +154,12 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         <a href="#">About</a>
     </nav>
 
-    <div class="content">
+    <div class="wavy-border">
         <h1>ETL Project Overview</h1>
         <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
     </div>
 
-    <div class="content">
+    <div class="wavy-border">
         <h2>ETL Project Documentation</h2>
         <p>My ETL Project aims to get data from the OpenEMR FHIR API, perform transformations, and load the data into another FHIR API.</p>
     </div>
