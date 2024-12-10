@@ -18,83 +18,71 @@
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(120deg, #800000, #ff4500); /* Rich fiery red gradient */
+            background: linear-gradient(120deg, #89f7fe, #66a6ff); /* Gradient background */
             margin: 0;
             padding: 0;
-            color: #fff;
-            text-align: center;
+            color: #333;
         }
 
         h1 {
-            color: #ffd700; /* Luxurious gold */
+            color: #fff;
             margin: 20px 0;
-            font-size: 4rem;
-            text-shadow: 5px 5px 8px rgba(255, 215, 0, 0.8); /* Glowing gold effect */
-            font-family: 'Impact', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-
-        h1::after {
-            content: "";
-            display: block;
-            width: 120px;
-            height: 6px;
-            background: #ffd700; /* Gold underline */
-            margin: 10px auto 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .team-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 40px;
+            gap: 30px;
             padding: 40px 20px;
         }
 
         .team-member {
-            position: relative;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 220px;
+            text-align: center;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
 
         .team-member img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%; /* Circular images */
+            width: 100%;
+            height: 200px;
             object-fit: cover;
-            border: 6px solid #ffd700; /* Gold border for richness */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .team-member img:hover {
-            transform: scale(1.1); /* Subtle zoom effect on hover */
-            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.6); /* Glowing shadow */
+            border-bottom: 4px solid #66a6ff;
         }
 
         .team-member h3 {
-            font-size: 20px;
+            font-size: 18px;
             margin: 15px 0 5px;
-            color: #ffd700; /* Luxurious gold */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            color: #333;
         }
 
         .team-member p {
             font-size: 14px;
-            margin: 0;
-            color: #ffdab9; /* Soft peach for contrast */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            margin: 0 0 15px;
+            color: #666;
         }
 
         /* Footer Styling */
         footer {
             margin-top: 20px;
-            padding: 20px 0;
-            background: #660000; /* Deep rich red */
-            color: #ffd700; /* Gold */
+            padding: 10px 0;
+            background: #66a6ff;
+            color: #fff;
             text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 14px;
         }
+
     </style>
 </head>
 <body>
@@ -127,7 +115,7 @@
     </div>
 
     <footer>
-        © 2024 ETL Project Team. Excellence in Innovation.
+        © 2024 ETL Project Team. All Rights Reserved.
     </footer>
 
 </body>
