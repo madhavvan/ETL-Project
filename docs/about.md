@@ -71,14 +71,14 @@
 <body>
 
     <h1>Meet Our Team</h1>
-        <div class="team-member">
+        <div class="team-member 2">
         <img src="img_2.png" alt="![img_2.png](img_2.png)">
         <h3>Dr Yashitha Raga</h3>
         <p>ETL Developer</p>
         </div>
 
-        <div class="team-member">
-        <img src="img_2.png" alt="![img_2.png](img_2.png)">
+        <div class="team-member 1">
+        <img src="img_1.png" alt="![img_1.png](img_1.png)">
         <h3>Dr Yashitha Raga</h3>
         <p>ETL Developer</p>
         </div>
