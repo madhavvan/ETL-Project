@@ -8,7 +8,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
 
-![img_2.png](img_2.png)
+
 
 
 ## ETL Project Documentation
@@ -37,162 +37,181 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #E6E6FA;  /* Lavender background */
+            background-color: #E6E6FA; /* Lavender background */
             margin: 0;
             padding: 0;
+            color: #333;
             line-height: 1.6;
         }
 
-        /* High-Energy Gradient Section Above the Image */
-        .highlight-section {
-            background: linear-gradient(45deg, #8A2BE2, #4B0082, #D8BFD8); /* Gradient background */
+        /* Header Section */
+        header {
+            background: linear-gradient(45deg, #8A2BE2, #9370DB, #E6E6FA); /* Rich lavender gradient */
             color: white;
-            padding: 100px 20px;
             text-align: center;
-            border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-            margin: 50px 0;
-            position: relative;
-            overflow: hidden;
+            padding: 60px 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        .highlight-section h1 {
-            font-size: 4em;
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        nav {
+            background-color: #9370DB; /* Medium lavender */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
             font-weight: bold;
-            text-transform: uppercase;
-            text-shadow: 0px 0px 15px rgba(138, 43, 226, 0.8); /* Neon glow effect */
-            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFD700; /* Gold on hover */
+        }
+
+        /* Highlight Section */
+        .highlight-section {
+            background: linear-gradient(45deg, #9370DB, #E6E6FA); /* Subtle lavender gradient */
+            color: #333;
+            padding: 50px 20px;
+            text-align: center;
+            margin: 50px auto;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 1200px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .highlight-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #4B0082; /* Deep lavender */
         }
 
         .highlight-section p {
-            font-size: 1.2em;
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.8;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            font-size: 1.3em;
+            color: #555;
         }
 
-        .highlight-section .button {
-            background-color: #8A2BE2;
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.2em;
-            cursor: pointer;
-            text-transform: uppercase;
-            margin-top: 30px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+        /* Team Section */
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
         }
 
-        .highlight-section .button:hover {
-            background-color: #4B0082; /* Darker purple on hover */
-            transform: scale(1.1);
-        }
-
-        /* Image Section - Full Width (Removed the image) */
-        .image-section {
-            background: url('https://via.placeholder.com/1000x500') center/cover no-repeat;
-            width: 100%;  /* Full width of the page */
-            height: 400px;
-            border-radius: 10px;
-            margin-top: -50px;  /* Pull image up to overlap the highlighted section */
-        }
-
-        /* Animated Floating Effect */
-        .highlight-section::after {
-            content: '';
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            animation: float 4s ease-in-out infinite;
-        }
-
-        /* Floating Animation */
-        @keyframes float {
-            0% {
-                transform: translateY(0) translateX(-50%);
-            }
-            50% {
-                transform: translateY(-30px) translateX(-50%);
-            }
-            100% {
-                transform: translateY(0) translateX(-50%);
-            }
-        }
-
-        /* Card Design */
-        .card {
-            background-color: white;
+        .team-member {
+            background: white;
             border-radius: 15px;
-            padding: 20px;
-            margin: 30px auto;
-            width: 100%;
-            max-width: 900px;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
             text-align: center;
+            padding: 20px;
+            width: 280px;
         }
 
-        .card h3 {
-            font-size: 2em;
-            color: #8A2BE2;
-            margin-bottom: 20px;
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px 0;
+            border: 4px solid #8A2BE2; /* Lavender border */
         }
 
-        .card p {
-            font-size: 1.2em;
-            color: #333;
-            margin-bottom: 20px;
+        .team-member h3 {
+            color: #4B0082;
+            font-size: 1.5em;
+            margin: 10px 0;
         }
 
-        .card .button {
-            background-color: #8A2BE2;
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.2em;
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .card .button:hover {
-            background-color: #4B0082; /* Darker purple on hover */
-            transform: scale(1.1);
+        .team-member p {
+            font-size: 1.1em;
+            color: #666;
         }
 
         /* Footer Section */
         footer {
-            background-color: #4B0082;
+            background: #4B0082;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
             font-size: 1.2em;
             margin-top: 50px;
         }
 
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
 
-    <!-- High-Energy Highlight Section Above the Image -->
+    <!-- Header Section -->
+    <header>
+        <h1>ETL Project Overview</h1>
+        <p>Welcome to the ETL Project Website - Demonstrating ETL pipelines using Python and FHIR APIs</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">BPMN Model</a>
+        <a href="#">Use Case Model</a>
+        <a href="#">ETL Pipeline</a>
+        <a href="#">Insights</a>
+        <a href="#">Team Contributions</a>
+        <a href="#">About</a>
+    </nav>
+
+    <!-- Highlight Section -->
     <div class="highlight-section">
-        <h1>ETL Process Overview</h1>
+        <h2>ETL Process Overview</h2>
         <p>This diagram illustrates the extraction, transformation, and loading (ETL) process, detailing key stages and decision points.</p>
-        <button class="button">Learn More</button>
     </div>
 
+    <!-- Team Section -->
+    <div class="team-container">
+        <div class="team-member">
+            <img src="img_2.png" alt="Dr Yashitha Raga">
+            <h3>Dr Yashitha Raga</h3>
+            <p>ETL Developer</p>
+        </div>
 
-    <!-- Another Card -->
-    <div class="card">
-        <h3>Team Contributions</h3>
-        <p>Explore the contributions of each team member in making this ETL project successful.</p>
-        <button class="button">View Team</button>
+        <div class="team-member">
+            <img src="img_3.png" alt="Dr Aishwarya">
+            <h3>Dr Aishwarya</h3>
+            <p>ETL Developer</p>
+        </div>
+
+        <div class="team-member">
+            <img src="img_4.png" alt="Venu Madhav Pentala">
+            <h3>Venu Madhav Pentala</h3>
+            <p>ETL Developer</p>
+        </div>
+
+        <div class="team-member">
+            <img src="img_5.png" alt="Dr Pallavi Vandanapu">
+            <h3>Dr Pallavi Vandanapu</h3>
+            <p>ETL Developer</p>
+        </div>
     </div>
 
     <!-- Footer Section -->
