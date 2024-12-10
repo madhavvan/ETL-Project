@@ -104,6 +104,11 @@
             <p>ETL Developer</p>
         </div>
 
+        <div class="team-member">
+            <img src="img_5.png" alt="Dr Pallavi Vandanapu">
+            <h3>Dr Pallavi Vandanapu</h3>
+            <p>ETL Developer</p>
+        </div>
         
         <div class="team-member">
             <img src="img_6.png" alt="Haneesha Chowdary Donepudi">
