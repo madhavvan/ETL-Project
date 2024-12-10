@@ -4,7 +4,6 @@
 
 
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
-
 =======
 
 <span style="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 2.5rem; color: #FFD700; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);">
