@@ -46,9 +46,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
 
 
-        nav a:hover {
-            color: #FFD700; /* Gold hover effect */
-        }
+
 
         /* Header Styles */
         h1 {
