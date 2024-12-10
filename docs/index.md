@@ -164,22 +164,6 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>ETL Project Overview</h1>
-        <p>Welcome to the ETL Project Website - Demonstrating ETL pipelines using Python and FHIR APIs</p>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.md">Home</a> | 
-        <a href=""bpmn.md">BPMN Model</a> | 
-        <a href="use_case.md">Use Case Model</a> | 
-        <a href="etl_pipeline.md">ETL Pipeline</a> | 
-        <a href="insights.md">Insights</a> | 
-        <a href="team.md">Team Contributions</a> | 
-        <a href="about.md">About</a>
-    </nav>
 
     <!-- Footer Section -->
     <footer>
