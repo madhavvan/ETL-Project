@@ -5,9 +5,6 @@
 =======
 
 
-
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +15,7 @@
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(120deg, #89f7fe, #66a6ff); /* Gradient background */
+            background: linear-gradient(120deg, #ffcccc, #ff9999); /* Light red gradient background */
             margin: 0;
             padding: 0;
             color: #333;
@@ -58,7 +55,7 @@
             width: 100%;
             height: 200px;
             object-fit: cover;
-            border-bottom: 4px solid #66a6ff;
+            border-bottom: 4px solid #ff6666;
         }
 
         .team-member h3 {
@@ -77,7 +74,7 @@
         footer {
             margin-top: 20px;
             padding: 10px 0;
-            background: #66a6ff;
+            background: #ff6666;
             color: #fff;
             text-align: center;
             font-size: 14px;
