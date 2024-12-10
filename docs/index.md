@@ -57,30 +57,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
-        h2 {
-            font-size: 2rem;
-            color: #8A2BE2;
-            text-align: center;
-            margin-bottom: 20px;
-        }
 
-        p {
-            font-size: 1.2rem;
-            color: #333;
-            text-align: justify;
-            line-height: 1.8;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #4B0082; /* Deep violet */
-            color: #FFFFFF;
-            margin-top: 40px;
-            font-size: 1rem;
-            border-radius: 0 0 10px 10px;
-        }
     </style>
 </head>
 <body>
