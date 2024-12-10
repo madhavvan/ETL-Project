@@ -77,5 +77,10 @@
         <p>ETL Developer</p>
         </div>
 
+        <div class="team-member">
+        <img src="img_2.png" alt="![img_2.png](img_2.png)">
+        <h3>Dr Yashitha Raga</h3>
+        <p>ETL Developer</p>
+        </div>
 </body>
 </html>
