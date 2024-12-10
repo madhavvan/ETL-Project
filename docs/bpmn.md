@@ -60,7 +60,7 @@
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #8A2BE2, #E6E6FA); /* Vibrant Lavender Gradient */
+            background: linear-gradient(135deg, #E6E6FA); 
             margin: 0;
             padding: 0;
             line-height: 1.6;
