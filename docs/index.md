@@ -46,7 +46,6 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
         h1, h2, h3 {
             color: #00000; /* Gold text for headers */
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
 
         p {
