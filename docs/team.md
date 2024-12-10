@@ -39,7 +39,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 ## Team Contributions
 
 <div style="background: linear-gradient(135deg, #FFA500, #FFA500); color: #FFFFFF; border-radius: 15px; padding: 20px; margin: 20px auto; width: 90%; max-width: 1200px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); font-family: 'Georgia', serif; text-align: center; font-size: 1.2rem;">
-    <h3 style="color: #FFD700;">Project Team and Roles</h3>
+    <h3 style="color: #FFA500;">Project Team and Roles</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0; color: #FFFFFF;">
         <thead>
             <tr style="background-color: #FFA500; color: #FFA500;">
