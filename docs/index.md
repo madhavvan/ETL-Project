@@ -51,7 +51,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
         p {
             font-size: 1.2rem;
-            color: #FFFFFF; /* White text for paragraphs */
+            color: #000000; /* White text for paragraphs */
         }
     </style>
 </head>
