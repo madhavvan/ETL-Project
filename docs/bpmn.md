@@ -10,17 +10,13 @@
 Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.
 </span>
 
-<div style="background: linear-gradient(135deg, #89CFF0, #00AEEF); padding: 20px; border-radius: 10px; margin: 20px auto; width: 90%; max-width: 1200px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); text-align: center;">
-</div>
-
-
 <img alt="img.png" height="500" src="img.png" width="800" style="border: 5px solid #FFD700; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block;">
 
-<div style="background: #00509E; color: #FFD700; border-radius: 15px; padding: 20px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: justify;">
+<div style="background: #4B0082; color: #FFD700; border-radius: 15px; padding: 20px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: justify;">
 <p>The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
 </div>
 
-<div style="background: #004080; color: #F0F8FF; padding: 20px; border-radius: 15px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: justify;">
+<div style="background: #6A5ACD; color: #F0F8FF; padding: 20px; border-radius: 15px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: justify;">
 <h3 style="color: #FFD700; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">The BPMN Model</h3>
 <p>The BPMN model represents the referral and treatment process for a patient transitioning from a Primary Care Clinic to a hospital for specialist care. The workflow is divided into three key pools: Primary Care Clinic, Hospital Administration, and Specialist, each signifying distinct roles in the patient care process.</p>
 
