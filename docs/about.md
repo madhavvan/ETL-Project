@@ -16,11 +16,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - ETL Project</title>
 
-      body {
+    <style>
+        /* General Styling */
+        body {
             font-family: 'Arial', sans-serif;
             background-color: #E6E6FA; /* Lavender background */
             margin: 0;
             padding: 0;
+            line-height: 1.6;
             text-align: center;
         }
 
@@ -31,10 +34,10 @@
 
         .team-container {
             display: flex;
-            justify-content: center;
-            gap: 20px;
             flex-wrap: wrap;
-            padding: 20px;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px;
         }
 
         .team-member {
@@ -45,9 +48,9 @@
         }
 
         .team-member img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            border-radius: 80%;
             object-fit: cover;
             border: 2px solid #666;
         }
@@ -66,20 +69,18 @@
     </style>
 </head>
 <body>
- 
 
     <h1>Meet Our Team</h1>
-        <div class="team-member">
-            <img src="img_2.png" alt="![img_2.png](img_2.png)">
-            <h3>Dr Yashitha Raga</h3>
-            <p>ETL Developer</p>
+        <div class="team-member 1">
+        <img src="img_2.png" alt="![img_2.png](img_2.png)">
+        <h3>Dr Yashitha Raga</h3>
+        <p>ETL Developer</p>
         </div>
 
-        <div class="team-member">
-            <img src="img_2.png" alt="![img_2.png](img_2.png)">
-            <h3>Dr Yashitha Raga</h3>
-            <p>ETL Developer</p>
+        <div class="team-member 2">
+        <img src="img_2.png" alt="![img_2.png](img_2.png)">
+        <h3>Dr Yashitha Raga</h3>
+        <p>ETL Developer</p>
         </div>
-    </div>
 </body>
 </html>
