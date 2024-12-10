@@ -21,52 +21,71 @@
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #E6E6FA; /* Lavender background */
+            background: linear-gradient(120deg, #89f7fe, #66a6ff); /* Gradient background */
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            text-align: center;
+            color: #333;
         }
 
         h1 {
-            color: #333;
+            color: #fff;
             margin: 20px 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .team-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 40px;
-            padding: 40px;
+            gap: 30px;
+            padding: 40px 20px;
         }
 
         .team-member {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 150px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 220px;
+            text-align: center;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
 
         .team-member img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%; /* Perfect circle */
+            width: 100%;
+            height: 200px;
             object-fit: cover;
-            border: 2px solid #666;
+            border-bottom: 4px solid #66a6ff;
         }
 
         .team-member h3 {
-            font-size: 16px;
-            margin: 10px 0 0 0;
-            color: #444;
+            font-size: 18px;
+            margin: 15px 0 5px;
+            color: #333;
         }
 
         .team-member p {
             font-size: 14px;
-            color: #777;
-            margin: 5px 0 0;
+            margin: 0 0 15px;
+            color: #666;
         }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #66a6ff;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 <body>
@@ -92,13 +111,18 @@
         </div>
 
         <div class="team-member">
-            <img src="img_5.png" alt="![img_5.png](img_5.png)">
+            <img src="img_5.png" alt="Dr Pallavi Vandanapu">
             <h3>Dr Pallavi Vandanapu</h3>
             <p>ETL Developer</p>
         </div>
     </div>
 
+    <footer>
+        © 2024 ETL Project Team. All Rights Reserved.
+    </footer>
+
 </body>
 </html>
+
 
  
