@@ -92,7 +92,7 @@
         </div>
 
         <div class="team-member">
-            <img src="img_2.png" alt="![img_2.png](img_2.png)">
+            <img src="img_5.png" alt="![img_5.png](img_5.png)">
             <h3>Dr Pallavi Vandanapu</h3>
             <p>ETL Developer</p>
         </div>
