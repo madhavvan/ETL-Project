@@ -16,8 +16,8 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
     <h3 style="color: #000000;">Project Team and Roles</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0; color: #FFFFFF;">
         <thead>
-            <tr style="background-color: #FFA500; color: #FFA500;">
-                <th style="border: 2px solid #000000; padding: 15px; font-size: 1.1rem;">Team Member</th>
+            <tr style="background-color: #FFA500; color: #000000;">
+                <th style="border: 2px solid #FFFFFF; padding: 15px; font-size: 1.1rem;">Team Member</th>
                 <th style="border: 2px solid #FFFFFF; padding: 15px; font-size: 1.1rem;">Role</th>
                 <th style="border: 2px solid #FFFFFF; padding: 15px; font-size: 1.1rem;">Contributions</th>
                 <th style="border: 2px solid #FFFFFF; padding: 15px; font-size: 1.1rem;">Reflections</th>
