@@ -35,87 +35,104 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
     <style>
         /* General Styling */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); /* Stylish Font */
         body {
-            font-family: 'Georgia', serif; /* Stylish font */
-            background-color: #E6E6FA; /* Light Lavender background */
+            font-family: 'Poppins', sans-serif; /* New font */
+            background: linear-gradient(135deg, #E6E6FA, #FFFFFF); /* Soft Lavender Gradient */
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            color: #000000;
+            line-height: 1.8;
+            color: #333;
             position: relative;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
-        /* Violet Borders */
-        body::before,
-        body::after {
+        /* 3D Borders */
+        body::before, body::after {
             content: '';
             position: absolute;
-            width: 100%;
-            height: 20px;
-            background: linear-gradient(90deg, #4B0082, #8A2BE2); /* Violet Gradient */
-            z-index: 1;
+            z-index: -1;
+            border: 10px solid transparent;
+            background: linear-gradient(90deg, #4B0082, #8A2BE2, #FFD700); /* Stylish Gradient */
+            width: 98%;
+            height: 98%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: border-effect 5s infinite alternate ease-in-out;
         }
 
         body::before {
             top: 0;
+            left: 0;
         }
 
         body::after {
             bottom: 0;
+            right: 0;
         }
 
-        /* Content Styling */
+        @keyframes border-effect {
+            0% { transform: translate(-5px, -5px) scale(1); }
+            100% { transform: translate(5px, 5px) scale(1.02); }
+        }
+
+        /* Content Box Styling */
+        .content {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            border: 5px solid #4B0082; /* Violet border */
+            text-align: center;
+            transform: translateZ(0);
+        }
+
+        .content:hover {
+            transform: scale(1.02); /* Subtle zoom on hover */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Text Styling */
         h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             color: #4B0082; /* Deep Violet */
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for headers */
-            text-align: center;
-            margin-top: 40px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
         }
 
-        h2, h3 {
-            color: #4B0082;
+        h2 {
             font-size: 2rem;
-            text-align: center;
-            margin: 20px 0;
+            color: #8A2BE2; /* Bright Violet */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
         }
 
         p {
             font-size: 1.2rem;
-            color: #333333; /* Darker text for readability */
-            margin: 20px auto;
-            text-align: center;
-            max-width: 900px;
-        }
-
-        /* Decorative Border for Content Sections */
-        .content {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            border: 5px solid #4B0082; /* Violet border */
+            color: #444;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
         }
 
         /* Navigation Bar */
         nav {
             background: #4B0082; /* Deep Violet */
-            padding: 10px 0;
+            padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 10;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 10px 10px;
         }
 
         nav a {
             color: #FFFFFF;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
+            margin: 0 20px;
+            font-size: 1.3rem;
             font-weight: bold;
             transition: color 0.3s ease;
         }
@@ -124,19 +141,15 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             color: #FFD700; /* Gold on hover */
         }
 
-        /* Additional Styling for Footer */
+        /* Footer Styling */
         footer {
             text-align: center;
             padding: 20px;
             background: #4B0082; /* Deep Violet */
             color: #FFFFFF;
-            position: relative;
             margin-top: 40px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            border-radius: 10px 10px 0 0;
         }
     </style>
 </head>
@@ -159,12 +172,13 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
     <div class="content">
         <h2>ETL Project Documentation</h2>
-        <p>My ETL Project aims to get data from the OpenEMR FHIR API, does some transformation, and then loads the data to another FHIR API.</p>
+        <p>My ETL Project aims to get data from the OpenEMR FHIR API, perform transformations, and load the data into another FHIR API.</p>
     </div>
 
     <footer>
-        <p>&copy; 2024 ETL Project. All Rights Reserved.</p>
+        &copy; 2024 ETL Project. All Rights Reserved.
     </footer>
+
 </body>
 </html>
 
