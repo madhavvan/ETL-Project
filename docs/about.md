@@ -50,7 +50,7 @@
         .team-member img {
             width: 180px;
             height: 180px;
-            border-radius: 150%;
+            border-radius: 50%; /* Perfect circle */
             object-fit: cover;
             border: 2px solid #666;
         }
@@ -71,11 +71,11 @@
 <body>
 
     <h1>Meet Our Team</h1>
-    <div class="team-member">
+        <div class="team-member">
         <img src="img_2.png" alt="![img_2.png](img_2.png)">
         <h3>Dr Yashitha Raga</h3>
         <p>ETL Developer</p>
-    </div>
+        </div>
 
         <div class="team-member">
         <img src="img_3.png" alt="![img_3.png](img_3.png)">
