@@ -8,7 +8,7 @@
 
 
 
-<img alt="img.png" height="500" src="img.png" width="800" style="border: 5px solid #F0F8FF; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block;">
+<img alt="img.png" height="500" src="img.png" width="1000" style="border: 5px solid #F0F8FF; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block;">
 
 <div style="background: #4B0082; color: #F0F8FF; border-radius: 15px; padding: 30px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem;">
     <p>The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
