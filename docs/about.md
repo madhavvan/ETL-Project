@@ -71,25 +71,25 @@
 <body>
 
     <h1>Meet Our Team</h1>
-        <div class="team-member 2">
+    <div class="team-member">
         <img src="img_2.png" alt="![img_2.png](img_2.png)">
         <h3>Dr Yashitha Raga</h3>
         <p>ETL Developer</p>
-        </div>
+    </div>
 
-        <div class="team-member 1">
+        <div class="team-member">
         <img src="img_3.png" alt="![img_3.png](img_3.png)">
         <h3>Dr Aishwarya</h3>
         <p>ETL Developer</p>
         </div>
 
-        <div class="team-member 1">
+        <div class="team-member">
         <img src="img_4.png" alt="![img_4.png](img_4.png)">
         <h3>Venu Madhav Pentala</h3>
         <p>ETL Developer</p>
         </div>
 
-        
+        <div class="team-member">
         <img src="img_5.png" alt="![img_5.png](img_5.png)">
         <h3>Dr Pallavi Vandanapu</h3>
         <p>ETL Developer</p>
