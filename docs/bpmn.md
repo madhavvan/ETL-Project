@@ -69,30 +69,10 @@
             min-height: 200vh; /* Ensures scrolling is possible */
         }
 
-        /* Border Themes */
-        body::before,
-        body::after {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: linear-gradient(135deg, #FFD700, #FF6347); /* Golden to Tomato Gradient */
-            border-radius: 50%;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-            z-index: -1;
-        }
+   
 
-        body::before {
-            top: -100px;
-            left: -100px;
-            animation: move 6s infinite ease-in-out;
-        }
 
-        body::after {
-            bottom: -100px;
-            right: -100px;
-            animation: move 6s infinite ease-in-out reverse;
-        }
+
 
         /* Animated Glow Borders */
         @keyframes move {
@@ -104,40 +84,6 @@
             }
         }
 
-        /* Card Styling */
-        .content {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.9); /* Semi-transparent White */
-            border-radius: 20px;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        .content h1 {
-            font-size: 2.5rem;
-            color: #4B0082; /* Indigo */
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .content p {
-            font-size: 1.2rem;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        /* Additional Content Section for Scroll Testing */
-        .additional-content {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            font-size: 1.2rem;
-            color: #333;
-        }
     </style>
 </head>
 <body>
