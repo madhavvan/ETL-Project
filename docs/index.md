@@ -173,7 +173,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
     <!-- Navigation Bar -->
     <nav>
         <a href="index.md">Home</a> | 
-        <a href="[BPMN Model](bpmn.md)</a> | 
+        <a href=""bpmn.md">BPMN Model</a> | 
         <a href="use_case.md">Use Case Model</a> | 
         <a href="etl_pipeline.md">ETL Pipeline</a> | 
         <a href="insights.md">Insights</a> | 
