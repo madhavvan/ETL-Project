@@ -12,7 +12,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 
 <img alt="img.png" height="500" src="img.png" width="800" style="border: 5px solid #FFD700; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block;">
 
-<div style="background: #4B0082; color: #FFD700; border-radius: 15px; padding: 20px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: justify;">
+<div style="background: #4B0082; color: #F0F8FF; border-radius: 15px; padding: 20px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: justify;">
 <p>The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
 </div>
 
