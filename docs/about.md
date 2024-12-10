@@ -78,7 +78,7 @@
         </div>
 
         <div class="team-member 1">
-        <img src="img_1.png" alt="![img_1.png](img_1.png)">
+        <img src="img_3.png" alt="![img_3.png](img_3.png)">
         <h3>Dr Yashitha Raga</h3>
         <p>ETL Developer</p>
         </div>
