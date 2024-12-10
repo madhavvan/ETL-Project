@@ -6,11 +6,11 @@
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
 
-<span style="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 2.5rem; color: #F0F8FF; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);">
+<span style="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 2.5rem; color: #FFD700; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);">
 Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.
 </span>
 
-<img alt="img.png" height="500" src="img.png" width="800" style="border: 5px solid #FFD700; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block;">
+<img alt="img.png" height="500" src="img.png" width="800" style="border: 5px solid #F0F8FF; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block;">
 
 <div style="background: #4B0082; color: #F0F8FF; border-radius: 15px; padding: 20px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: justify;">
 <p>The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
