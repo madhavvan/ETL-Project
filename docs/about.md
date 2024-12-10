@@ -9,7 +9,7 @@
 
 
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -71,12 +71,7 @@
 <body>
 
     <h1>Meet Our Team</h1>
-    <div class="team-container">
-        <div class="img-3.png">
-        <img src="![img_3.png](img_3.png)"> 
-        <h3>Dr Yashitha Raga</h3>
-        <p>ETL Developer</p>
-        </div>
+   
     </div>
         <div class="team-member">
         <img src="img_2.png" alt="![img_2.png](img_2.png)">
