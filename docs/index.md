@@ -37,130 +37,30 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #E6E6FA; /* Lavender background */
+            background-color: #8A2BE2;  /* Violet background */
             margin: 0;
             padding: 0;
-            color: #333;
             line-height: 1.6;
+            color: #F0F8FF; /* Light text color for contrast */
         }
 
-        /* Header Section */
-        header {
-            background: linear-gradient(45deg, #8A2BE2, #9370DB, #E6E6FA); /* Rich lavender gradient */
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        h1, h2, h3 {
+            color: #FFD700; /* Gold text for headers */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
 
-        header h1 {
-            font-size: 3.5em;
-            margin: 0;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        header p {
-            font-size: 1.5em;
-            margin-top: 10px;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        nav {
-            background-color: #9370DB; /* Medium lavender */
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #FFD700; /* Gold on hover */
-        }
-
-        /* Highlight Section */
-        .highlight-section {
-            background: linear-gradient(45deg, #9370DB, #E6E6FA); /* Subtle lavender gradient */
-            color: #333;
-            padding: 50px 20px;
-            text-align: center;
-            margin: 50px auto;
-            border-radius: 20px;
-            width: 90%;
-            max-width: 1200px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .highlight-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #4B0082; /* Deep lavender */
-        }
-
-        .highlight-section p {
-            font-size: 1.3em;
-            color: #555;
-        }
-
-        /* Team Section */
-        .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            padding: 40px;
-        }
-
-        .team-member {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-            overflow: hidden;
-            text-align: center;
-            padding: 20px;
-            width: 280px;
-        }
-
-        .team-member img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px 0;
-            border: 4px solid #8A2BE2; /* Lavender border */
-        }
-
-        .team-member h3 {
-            color: #4B0082;
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-
-        .team-member p {
-            font-size: 1.1em;
-            color: #666;
-        }
-
-        /* Footer Section */
-        footer {
-            background: #4B0082;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 1.2em;
-            margin-top: 50px;
-        }
-
-        footer p {
-            margin: 0;
+        p {
+            font-size: 1.2rem;
+            color: #FFFFFF; /* White text for paragraphs */
         }
     </style>
+</head>
+<body>
+    <h1>ETL Project Overview</h1>
+    <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
+</body>
+</html>
+
 </head>
 <body>
   
