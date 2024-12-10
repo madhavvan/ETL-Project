@@ -172,47 +172,14 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="#">Home</a>
-        <a href="#">BPMN Model</a>
-        <a href="#">Use Case Model</a>
-        <a href="#">ETL Pipeline</a>
-        <a href="#">Insights</a>
-        <a href="#">Team Contributions</a>
-        <a href="#">About</a>
+        <a href="index.md">Home</a> | 
+        <a href="bpmn.md">BPMN Model</a> | 
+        <a href="use_case.md">Use Case Model</a> | 
+        <a href="etl_pipeline.md">ETL Pipeline</a> | 
+        <a href="insights.md">Insights</a> | 
+        <a href="team.md">Team Contributions</a> | 
+        <a href="about.md">About</a>
     </nav>
-
-    <!-- Highlight Section -->
-    <div class="highlight-section">
-        <h2>ETL Process Overview</h2>
-        <p>This diagram illustrates the extraction, transformation, and loading (ETL) process, detailing key stages and decision points.</p>
-    </div>
-
-    <!-- Team Section -->
-    <div class="team-container">
-        <div class="team-member">
-            <img src="img_2.png" alt="Dr Yashitha Raga">
-            <h3>Dr Yashitha Raga</h3>
-            <p>ETL Developer</p>
-        </div>
-
-        <div class="team-member">
-            <img src="img_3.png" alt="Dr Aishwarya">
-            <h3>Dr Aishwarya</h3>
-            <p>ETL Developer</p>
-        </div>
-
-        <div class="team-member">
-            <img src="img_4.png" alt="Venu Madhav Pentala">
-            <h3>Venu Madhav Pentala</h3>
-            <p>ETL Developer</p>
-        </div>
-
-        <div class="team-member">
-            <img src="img_5.png" alt="Dr Pallavi Vandanapu">
-            <h3>Dr Pallavi Vandanapu</h3>
-            <p>ETL Developer</p>
-        </div>
-    </div>
 
     <!-- Footer Section -->
     <footer>
