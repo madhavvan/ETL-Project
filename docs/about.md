@@ -10,7 +10,8 @@
 
 
 
-<!DOCTYPE html>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,17 +22,19 @@
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(120deg, #89f7fe, #66a6ff); /* Gradient background */
+            background: linear-gradient(120deg, #ffe6e6, #ffcccc); /* Light red gradient background */
             margin: 0;
             padding: 0;
             color: #333;
         }
 
         h1 {
-            color: #fff;
+            color: #ff4500; /* Fiery orange-red */
             margin: 20px 0;
-            font-size: 2.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-size: 3rem;
+            text-shadow: 4px 4px 6px rgba(255, 69, 0, 0.7); /* Fiery effect */
+            font-family: 'Impact', sans-serif;
+            text-transform: uppercase;
         }
 
         .team-container {
@@ -58,16 +61,18 @@
         }
 
         .team-member img {
-            width: 100%;
-            height: 200px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Circular images */
             object-fit: cover;
-            border-bottom: 4px solid #66a6ff;
+            margin-top: 20px;
+            border: 4px solid #ff9999; /* Light red border around images */
         }
 
         .team-member h3 {
             font-size: 18px;
             margin: 15px 0 5px;
-            color: #333;
+            color: #ff4500; /* Fiery red-orange for names */
         }
 
         .team-member p {
@@ -80,7 +85,7 @@
         footer {
             margin-top: 20px;
             padding: 10px 0;
-            background: #66a6ff;
+            background: #ff9999;
             color: #fff;
             text-align: center;
             font-size: 14px;
@@ -123,6 +128,7 @@
 
 </body>
 </html>
+
 
 
  
