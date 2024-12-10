@@ -24,39 +24,51 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
             </tr>
         </thead>
         <tbody>
-            <tr style="background-color: rgba(255, 255, 255, 0.95); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);">
-                <td style="border: 1px solid #000000; padding: 15px;">Pallavi Vandanapu</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Coding Specialist</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Completed coding tasks 1 and 2 involving API integration and data processing.</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Gained insights into FHIR APIs and real-world data transformation challenges.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.95);">
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Pallavi Vandanapu</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Coding Specialist</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Completed coding tasks 1 and 2 involving API integration and data processing.</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Gained insights into FHIR APIs and real-world data transformation challenges.</td>
             </tr>
-            <tr style="background-color: rgba(255, 255, 255, 0.9); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);">
-                <td style="border: 1px solid #000000; padding: 15px;">Venu Madhav Pentala</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Website Designer</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Designed and implemented the project website with intuitive navigation.</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Enhanced web development skills while ensuring project accessibility.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.9);">
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Venu Madhav Pentala</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Website Designer</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Designed and implemented the project website with intuitive navigation.</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Enhanced web development skills while ensuring project accessibility.</td>
             </tr>
-            <tr style="background-color: rgba(255, 255, 255, 0.95); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);">
-                <td style="border: 1px solid #000000; padding: 15px;">Yashita Raga Saranam</td>
-                <td style="border: 1px solid #000000; padding: 15px;">BPMN and Coding Specialist</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Completed coding tasks 3 and 4, built BPMN model reflecting processes.</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Learned about process visualization and multi-tool integration.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.95);">
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Yashita Raga Saranam</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">BPMN and Coding Specialist</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Completed coding tasks 3 and 4, built BPMN model reflecting processes.</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Learned about process visualization and multi-tool integration.</td>
             </tr>
-            <tr style="background-color: rgba(255, 255, 255, 0.9); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);">
-                <td style="border: 1px solid #000000; padding: 15px;">Haneesha Donepudi</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Use Case Model Designer</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Created use case models defining system interactions and roles.</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Developed clear communication skills for technical concepts.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.9);">
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Haneesha Donepudi</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Use Case Model Designer</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Created use case models defining system interactions and roles.</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Developed clear communication skills for technical concepts.</td>
             </tr>
-            <tr style="background-color: rgba(255, 255, 255, 0.95); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);">
-                <td style="border: 1px solid #000000; padding: 15px;">Aishwarya Voraganti</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Documentation Specialist</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Developed and structured project documentation.</td>
-                <td style="border: 1px solid #000000; padding: 15px;">Improved technical writing and organization skills.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.95);">
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Aishwarya Voraganti</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Documentation Specialist</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Developed and structured project documentation.</td>
+                <td class="hover-effect" style="border: 1px solid #000000; padding: 15px;">Improved technical writing and organization skills.</td>
             </tr>
         </tbody>
     </table>
 </div>
+
+<style>
+    /* Hover 3D Pop-Up Effect */
+    .hover-effect {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-effect:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+</style>
 
 
 <!DOCTYPE html>
