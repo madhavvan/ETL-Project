@@ -37,12 +37,11 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #000000
-;  
+            background-color: #E6E6FA;  
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            color: #F0F8FF; /* Light text color for contrast */
+            color: #000000; /* Light text color for contrast */
         }
 
         h1, h2, h3 {
