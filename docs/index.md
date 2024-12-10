@@ -41,67 +41,10 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
-        /* Wavy Border Effect */
-        .wavy-border {
-            position: relative;
-            padding: 40px 20px;
-            margin: 20px auto;
-            background: #FFFFFF; /* White background for content */
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            max-width: 1200px;
-            z-index: 1;
-        }
 
-        .wavy-border::before,
-        .wavy-border::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            background: linear-gradient(90deg, #4B0082, #8A2BE2);
-            mask-image: repeating-radial-gradient(circle, transparent, transparent 10px, white 10px, white 20px);
-            -webkit-mask-image: repeating-radial-gradient(circle, transparent, transparent 10px, white 10px, white 20px);
-            border-radius: 15px;
-        }
 
-        .wavy-border::before {
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
-        }
 
-        .wavy-border::after {
-            top: -15px;
-            left: -15px;
-            right: -15px;
-            bottom: -15px;
-            opacity: 0.7;
-        }
 
-        /* Navigation Bar */
-        nav {
-            background: #4B0082; /* Deep violet */
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-
-        nav a {
-            color: #FFFFFF;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
 
         nav a:hover {
             color: #FFD700; /* Gold hover effect */
