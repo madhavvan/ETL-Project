@@ -5,7 +5,6 @@
 =======
 
 
-<img alt="img_1.png" height="1000" src="img_1.png" width="500"/> | <img alt="img_1.png" height="1000" src="img_1.png" width="500"/>
 
 ![img_2.png](img_2.png)
 
@@ -75,7 +74,7 @@
     <div class="team-container">
         <div class="img-3.png">
         <img src="![img_3.png](img_3.png)">
-        <h3>John Doe</h3>
+        <h3>Dr Yashitha Raga</h3>
         <p>ETL Developer</p>
         </div>
     </div>
