@@ -88,5 +88,14 @@
         <h3>Venu Madhav Pentala</h3>
         <p>ETL Developer</p>
         </div>
+
+
+
+
+        <div class="team-member 1">
+        <img src="img_5.png" alt="![img_5.png](img_5.png)">
+        <h3>Venu Madhav Pentala</h3>
+        <p>ETL Developer</p>
+        </div>
 </body>
 </html>
