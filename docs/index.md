@@ -118,27 +118,6 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 </head>
 <body>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">BPMN Model</a>
-        <a href="#">Use Case Model</a>
-        <a href="#">ETL Pipeline</a>
-        <a href="#">Insights</a>
-        <a href="#">Team Contributions</a>
-        <a href="#">About</a>
-    </nav>
-
-    <div class="container">
-        <div class="content">
-            <h1>ETL Project Overview</h1>
-            <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
-        </div>
-
-        <div class="content">
-            <h2>ETL Project Documentation</h2>
-            <p>My ETL Project aims to get data from the OpenEMR FHIR API, perform transformations, and load the data into another FHIR API.</p>
-        </div>
-    </div>
 
     <footer>
         &copy; 2024 ETL Project. All Rights Reserved.
