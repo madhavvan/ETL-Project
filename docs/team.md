@@ -7,29 +7,79 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
-FHIR (Fast Healthcare Interoperability Resources) is a standard established by HL7 International to promote the electronic transmission of healthcare information. FHIR APIs (Application Programming Interfaces) are essential to this standard, providing formal mechanisms for accessing and sharing healthcare data across multiple operating systems.
+## FHIR APIs Overview
 
-Key features:
-FHIR APIs provide a resource-based structure, separating data into modular "resources" (e.g., Patient, Observation, Medication) that are reusable and scalable (HL7 International, n.d.).
- RESTful Design: FHIR APIs adhere to RESTful principles, allowing data interaction using common HTTP methods such as GET, POST, PUT, and DELETE (Mandel et al. 2016).
- Interoperability: FHIR APIs enable smooth data transmission across Electronic Health Records (EHRs), mobile applications, cloud platforms, and other healthcare systems (ONC, n.d).
-Role in Healthcare Data Exchange:
-FHIR APIs support interoperability and conform with standards such as the Cures Act Final Rule, ensuring safe and consistent data transmission among providers, payers, and patients (ONC, n.d.).
- Real-Time Access: They allow for real-time data exchange, which improves clinical decision-making and care coordination (Mandel et al. 2016).
- Patient Empowerment: By allowing patients to access and share their health information with third-party applications, FHIR APIs promote patient-centered treatment.
- Integration Ease: They facilitate easier to integrate legacy systems with current healthcare technology, lowering implementation complexity (HL7 International, n.d).
+<div style="background: #8A2BE2; color: #F0F8FF; border-radius: 15px; padding: 20px; margin: 20px auto; width: 90%; max-width: 1200px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); font-family: 'Georgia', serif; text-align: justify; font-size: 1.2rem;">
+    <p>FHIR (Fast Healthcare Interoperability Resources) is a standard established by HL7 International to promote the electronic transmission of healthcare information. FHIR APIs are essential to this standard, providing mechanisms for accessing and sharing healthcare data across multiple operating systems.</p>
+    <h3 style="color: #FFD700;">Key Features:</h3>
+    <ul>
+        <li>Resource-Based Structure: Separates data into modular "resources" (e.g., Patient, Observation, Medication) for reusability.</li>
+        <li>RESTful Design: Uses HTTP methods like GET, POST, PUT, DELETE.</li>
+        <li>Interoperability: Enables smooth data sharing across EHRs, mobile apps, and healthcare systems.</li>
+    </ul>
+</div>
 
-Explanation of BPMN Model
+---
 
-The BPMN model illustrates the patient referral process from a Primary Care Clinic to a Hospital and Specialist. This model is divided into three key pools: Primary Care Clinic, Hospital Administration, and Specialist, with each representing specific roles in the referral workflow. 
+## BPMN Model Explanation
 
-1. Primary Care Clinic:  
-   The process begins when a patient is referred by their primary care provider. The clinic receives the care plan, updates the patient’s medical records, and schedules follow-up care. Once these tasks are completed, the referral is sent to the hospital.
+<div style="background: #6A5ACD; color: #F0F8FF; padding: 30px; border-radius: 15px; margin: 20px auto; width: 90%; max-width: 1200px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); font-family: 'Georgia', serif; text-align: justify; font-size: 1.2rem;">
+    <h3 style="color: #FFD700;">Primary Care Clinic:</h3>
+    <p>The process begins when a patient is referred by their primary care provider. The clinic updates medical records and schedules follow-up care before sending the referral to the hospital.</p>
+    
+    <h3 style="color: #FFD700;">Hospital Administration:</h3>
+    <p>The hospital reviews the referral, validates it, and registers the patient for further evaluation. Invalid referrals are sent back to the clinic for clarification.</p>
+    
+    <h3 style="color: #FFD700;">Specialist’s Process:</h3>
+    <p>After registration, the specialist evaluates the patient and determines further care. The patient is discharged with instructions if no further treatment is required or referred back to the clinic for follow-up care.</p>
+</div>
 
-2. Hospital Administration:  
-   The hospital receives the referral, and the administration reviews it. At this stage, there is a decision gateway to assess whether the referral is valid. If the referral is valid, the patient is registered at the hospital for further evaluation. If the referral is invalid, a clarification request is sent back to the primary care clinic to ensure accuracy. This step ensures the seamless flow of accurate information to avoid any delays or missteps in patient care.
+---
 
-3. Specialist’s Process:  
-   After the patient is registered, the specialist evaluates the patient to determine if treatment is required. If no further care is needed, the patient is discharged with instructions. If treatment is necessary, the specialist provides care and reassesses whether follow-up care is required. If yes, the patient is referred to the primary care clinic. If no additional care is needed, the patient is discharged with proper documentation and instructions.
+## Team Contributions
 
-The BPMN model captures the critical interactions between the clinic, hospital, and specialist, highlighting decision points that prevent errors, ensure timely care, and maintain communication across the entities. It also ensures the patient’s journey is clear, well-coordinated, and focused on achieving the best possible outcomes.
+<div style="background: #8A2BE2; color: #F0F8FF; border-radius: 15px; padding: 20px; margin: 20px auto; width: 90%; max-width: 1200px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); font-family: 'Georgia', serif; text-align: center; font-size: 1.2rem;">
+    <h3 style="color: #FFD700;">Project Team and Roles</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0; color: #F0F8FF;">
+        <thead>
+            <tr style="background-color: #6A5ACD; color: #FFD700;">
+                <th style="border: 1px solid #F0F8FF; padding: 10px;">Team Member</th>
+                <th style="border: 1px solid #F0F8FF; padding: 10px;">Role</th>
+                <th style="border: 1px solid #F0F8FF; padding: 10px;">Contributions</th>
+                <th style="border: 1px solid #F0F8FF; padding: 10px;">Reflections</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Pallavi Vandanapu</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Coding Specialist</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Completed coding tasks 1 and 2 involving API integration and data processing.</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Gained insights into FHIR APIs and real-world data transformation challenges.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Venu Madhav Pentala</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Website Designer</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Designed and implemented the project website with intuitive navigation.</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Enhanced web development skills while ensuring project accessibility.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Yashita Raga Saranam</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">BPMN and Coding Specialist</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Completed coding tasks 3 and 4, built BPMN model reflecting processes.</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Learned about process visualization and multi-tool integration.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Haneesha Donepudi</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Use Case Model Designer</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Created use case models defining system interactions and roles.</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Developed clear communication skills for technical concepts.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Aishwarya Voraganti</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Documentation Specialist</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Developed and structured project documentation.</td>
+                <td style="border: 1px solid #F0F8FF; padding: 10px;">Improved technical writing and organization skills.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
