@@ -60,7 +60,7 @@
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: #4B0082; 
+            background: #9370DB; 
             margin: 0;
             padding: 0;
             line-height: 1.6;

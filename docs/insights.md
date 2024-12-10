@@ -16,7 +16,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
         /* General Styling */
         body {
             font-family: 'Georgia', serif;
-            background-color:#FFD700; 
+            background-color:#FFFFE0; 
             margin: 0;
             padding: 0;
             line-height: 1.6;
