@@ -16,14 +16,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - ETL Project</title>
 
-    <style>
-        /* General Styling */
-        body {
+      body {
             font-family: 'Arial', sans-serif;
             background-color: #E6E6FA; /* Lavender background */
             margin: 0;
             padding: 0;
-            line-height: 1.6;
             text-align: center;
         }
 
@@ -34,9 +31,9 @@
 
         .team-container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
             padding: 20px;
         }
 
@@ -69,18 +66,20 @@
     </style>
 </head>
 <body>
+ 
 
     <h1>Meet Our Team</h1>
         <div class="team-member">
-        <img src="img_2.png" alt="![img_2.png](img_2.png)">
-        <h3>Dr Yashitha Raga</h3>
-        <p>ETL Developer</p>
+            <img src="img_2.png" alt="![img_2.png](img_2.png)">
+            <h3>Dr Yashitha Raga</h3>
+            <p>ETL Developer</p>
         </div>
 
         <div class="team-member">
-        <img src="img_2.png" alt="![img_2.png](img_2.png)">
-        <h3>Dr Yashitha Raga</h3>
-        <p>ETL Developer</p>
+            <img src="img_2.png" alt="![img_2.png](img_2.png)">
+            <h3>Dr Yashitha Raga</h3>
+            <p>ETL Developer</p>
         </div>
+    </div>
 </body>
 </html>
