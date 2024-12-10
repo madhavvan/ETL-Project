@@ -79,7 +79,7 @@
         </div>
     </div>
         <div class="team-member">
-        <img src="![img_2.png](img_2.png)" alt="Team Member 1">
+        <img src="![img_2.png](img_2.png)" alt="![img_2.png](img_2.png)">
         <h3>John Doe</h3>
         <p>ETL Developer</p>
         </div>
