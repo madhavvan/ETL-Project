@@ -31,14 +31,34 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
 
     <style>
         /* General Styling */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); /* Clean, modern font */
         body {
-            font-family: 'Roboto', sans-serif; /* New stylish font */
-            background: linear-gradient(135deg, #E6E6FA, #D8BFD8); /* Subtle violet gradient */
+            font-family: 'Georgia', serif;
+            background-color: #E6E6FA; /* Lavender background */
             margin: 0;
             padding: 0;
-            line-height: 1.8;
+            line-height: 1.6;
             color: #333;
+            position: relative;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Wavy Border Styling */
+        body::before,
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(to right, #4B0082, #8A2BE2);
+            mask-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/Wave-pattern.png');
+            -webkit-mask-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/Wave-pattern.png');
+            mask-size: 40%;
+            -webkit-mask-size: 40%;
+            mask-repeat: repeat;
+            -webkit-mask-repeat: repeat;
         }
 
         /* Content Box Styling */
@@ -46,9 +66,9 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             max-width: 900px;
             margin: 40px auto;
             padding: 30px;
-            background: #FFFFFF; /* Clean white background */
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            background: #FFFFFF; /* White background */
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             text-align: center;
         }
 
@@ -56,19 +76,18 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             font-size: 2.8rem;
             color: #4B0082; /* Deep violet */
             margin-bottom: 20px;
-            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         h2 {
             font-size: 2rem;
             color: #4B0082; /* Deep violet */
             margin-bottom: 20px;
-            font-weight: 600;
         }
 
         p {
             font-size: 1.2rem;
-            color: #555; /* Soft gray for better readability */
+            color: #333;
             margin-bottom: 20px;
             line-height: 1.6;
         }
@@ -81,7 +100,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             position: sticky;
             top: 0;
             z-index: 10;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the nav bar */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
 
         nav a {
@@ -106,22 +125,39 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             margin-top: 40px;
             font-size: 1rem;
             border-radius: 0 0 10px 10px;
-            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); /* Soft shadow at the top */
         }
 
-        /* Page Container for Layout */
-        .container {
-            padding: 20px;
+        footer p {
+            margin: 0;
         }
-
     </style>
 </head>
 <body>
 
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">BPMN Model</a>
+        <a href="#">Use Case Model</a>
+        <a href="#">ETL Pipeline</a>
+        <a href="#">Insights</a>
+        <a href="#">Team Contributions</a>
+        <a href="#">About</a>
+    </nav>
+
+    <div class="content">
+        <h1>ETL Project Overview</h1>
+        <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
+    </div>
+
+    <div class="content">
+        <h2>ETL Project Documentation</h2>
+        <p>My ETL Project aims to get data from the OpenEMR FHIR API, perform transformations, and load the data into another FHIR API.</p>
+    </div>
 
     <footer>
-        &copy; 2024 ETL Project. All Rights Reserved.
+        <p>&copy; 2024 ETL Project. All Rights Reserved.</p>
     </footer>
 
 </body>
 </html>
+
