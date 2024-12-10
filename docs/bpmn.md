@@ -68,6 +68,14 @@
             overflow-x: hidden; /* Prevent horizontal scrolling */
             min-height: 200vh; /* Ensures scrolling is possible */
         }
+        /* Header Styles */
+        h1 {
+            font-size: 2.8rem;
+            color: #4B0082;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
     </style>
 </head>

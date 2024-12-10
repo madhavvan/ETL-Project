@@ -37,5 +37,13 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
             padding: 0;
             line-height: 1.6;
         }
+        /* Header Styles */
+        h1 {
+            font-size: 2.8rem;
+            color: #4B0082;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
 </head>
 <body>
