@@ -60,13 +60,83 @@
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #E6E6FA;  /* Lavender background */
+            background: linear-gradient(135deg, #8A2BE2, #E6E6FA); /* Vibrant Lavender Gradient */
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            position: relative;
+            overflow: hidden;
         }
+
+        /* Border Themes */
+        body::before,
+        body::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #FFD700, #FF6347); /* Golden to Tomato Gradient */
+            border-radius: 50%;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+
+        body::before {
+            top: -100px;
+            left: -100px;
+            animation: move 6s infinite ease-in-out;
+        }
+
+        body::after {
+            bottom: -100px;
+            right: -100px;
+            animation: move 6s infinite ease-in-out reverse;
+        }
+
+        /* Animated Glow Borders */
+        @keyframes move {
+            0%, 100% {
+                transform: scale(1) translate(0, 0);
+            }
+            50% {
+                transform: scale(1.2) translate(50px, 50px);
+            }
+        }
+
+        /* Card Styling */
+        .content {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent White */
+            border-radius: 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            color: #4B0082; /* Indigo */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="content">
+        <h1>ETL Project Overview</h1>
+        <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
+    </div>
+
+</body>
+</html>
+
 
 [Back to Home](index.md)
 
