@@ -72,7 +72,7 @@
 
     <h1>Meet Our Team</h1>
    
-    </div>
+        </div>
         <div class="team-member">
         <img src="img_2.png" alt="![img_2.png](img_2.png)">
         <h3>Dr Yashitha Raga</h3>
