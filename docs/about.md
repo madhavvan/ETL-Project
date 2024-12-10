@@ -10,6 +10,7 @@
 
 
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,6 +70,36 @@
     </style>
 </head>
 <body>
+
+    <h1>Meet Our Team</h1>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="img_2.png" alt="Dr Yashitha Raga">
+            <h3>Dr Yashitha Raga</h3>
+            <p>ETL Developer</p>
+        </div>
+
+        <div class="team-member">
+            <img src="img_3.png" alt="Dr Aishwarya">
+            <h3>Dr Aishwarya</h3>
+            <p>ETL Developer</p>
+        </div>
+
+        <div class="team-member">
+            <img src="img_4.png" alt="Venu Madhav Pentala">
+            <h3>Venu Madhav Pentala</h3>
+            <p>ETL Developer</p>
+        </div>
+
+        <div class="team-member">
+            <img src="img_2.png" alt="![img_2.png](img_2.png)">
+            <h3>Dr Pallavi Vandanapu</h3>
+            <p>ETL Developer</p>
+        </div>
+    </div>
+
+</body>
+</html>
 
     <h1>Meet Our Team</h1>
         <div class="team-member">
