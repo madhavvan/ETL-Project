@@ -6,7 +6,7 @@
 
 
 
-![img_2.png](img_2.png)
+
 
 
 <!DOCTYPE html>
@@ -73,11 +73,16 @@
     <h1>Meet Our Team</h1>
     <div class="team-container">
         <div class="img-3.png">
-        <img src="![img_3.png](img_3.png)">
+        <img src="![img_3.png](img_3.png)"> 
         <h3>Dr Yashitha Raga</h3>
         <p>ETL Developer</p>
         </div>
     </div>
+        <div class="team-member">
+        <img src="![img_2.png](img_2.png)" alt="Team Member 1">
+        <h3>John Doe</h3>
+        <p>ETL Developer</p>
+        </div>
 
 </body>
 </html>
