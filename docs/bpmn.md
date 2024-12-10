@@ -10,11 +10,11 @@
 
 <img alt="img.png" height="700" src="img.png" width="1100" style="border: 5px solid #F0F8FF; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block;">
 
-<div class="hover-box" style="background: #4B0082; color: #F0F8FF; border-radius: 15px; padding: 30px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<div class="hover-box" style="background: #4B0082; color: #F0F8FF; border-radius: 15px; padding: 30px; margin: 20px auto; width: 90%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
     <p>The diagram illustrates the ETL process from extraction to loading, with decision points and key tasks highlighted.</p>
 </div>
 
-<div class="hover-box" style="background: #6A5ACD; color: #F0F8FF; padding: 30px; border-radius: 15px; margin: 20px auto; width: 90%; max-width: 1000px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<div class="hover-box" style="background: #6A5ACD; color: #F0F8FF; padding: 30px; border-radius: 15px; margin: 20px auto; width: 90%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
     <h3 style="color: #FFD700; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); font-size: 2rem;">The BPMN Model</h3>
     <p>The BPMN model represents the referral and treatment process for a patient transitioning from a Primary Care Clinic to a hospital for specialist care. The workflow is divided into three key pools: Primary Care Clinic, Hospital Administration, and Specialist, each signifying distinct roles in the patient care process.</p>
 
