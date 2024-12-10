@@ -142,18 +142,9 @@
 </head>
 <body>
 
-    <div class="content">
-        <h1>ETL Project Overview</h1>
-        <p>Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.</p>
-    </div>
+  
 
-    <div class="additional-content">
-        <h2>Additional Section</h2>
-        <p>This is extra content added to ensure scrolling functionality works as intended. The page is designed to be visually appealing while allowing smooth navigation. Add more content as needed to test the scrolling behavior.</p>
-    </div>
 
-</body>
-</html>
 
 
 [Back to Home](index.md)
