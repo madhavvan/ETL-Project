@@ -37,7 +37,8 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #E6E6FA;  
+            background-color: #000000
+;  
             margin: 0;
             padding: 0;
             line-height: 1.6;
