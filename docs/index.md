@@ -33,7 +33,7 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
         /* General Styling */
         body {
             font-family: 'Georgia', serif;
-            background-color: #8B00FF; /* Lavender background */
+            background-color: #E6E6FA; /* Lavender background */
             margin: 0;
             padding: 0;
             line-height: 1.6;
