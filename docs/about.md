@@ -4,7 +4,7 @@
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
 
-[Back to Home](index.md)
+
 
 <html lang="en">
 <head>
@@ -125,6 +125,8 @@
             <p>ETL Developer</p>
         </div>
     </div>
+
+[Back to Home](index.md)
 
     <footer>
         © 2024 ETL Project Team. All Rights Reserved.
