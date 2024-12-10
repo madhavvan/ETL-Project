@@ -43,42 +43,42 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0; color: #FFFFFF;">
         <thead>
             <tr style="background-color: #FF6347; color: #FFD700;">
-                <th style="border: 1px solid #FFFFFF; padding: 10px;">Team Member</th>
-                <th style="border: 1px solid #FFFFFF; padding: 10px;">Role</th>
-                <th style="border: 1px solid #FFFFFF; padding: 10px;">Contributions</th>
-                <th style="border: 1px solid #FFFFFF; padding: 10px;">Reflections</th>
+                <th style="border: 2px solid #FFFFFF; padding: 15px; font-size: 1.1rem;">Team Member</th>
+                <th style="border: 2px solid #FFFFFF; padding: 15px; font-size: 1.1rem;">Role</th>
+                <th style="border: 2px solid #FFFFFF; padding: 15px; font-size: 1.1rem;">Contributions</th>
+                <th style="border: 2px solid #FFFFFF; padding: 15px; font-size: 1.1rem;">Reflections</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Pallavi Vandanapu</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Coding Specialist</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Completed coding tasks 1 and 2 involving API integration and data processing.</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Gained insights into FHIR APIs and real-world data transformation challenges.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.1);">
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Pallavi Vandanapu</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Coding Specialist</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Completed coding tasks 1 and 2 involving API integration and data processing.</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Gained insights into FHIR APIs and real-world data transformation challenges.</td>
             </tr>
-            <tr>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Venu Madhav Pentala</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Website Designer</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Designed and implemented the project website with intuitive navigation.</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Enhanced web development skills while ensuring project accessibility.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.2);">
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Venu Madhav Pentala</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Website Designer</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Designed and implemented the project website with intuitive navigation.</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Enhanced web development skills while ensuring project accessibility.</td>
             </tr>
-            <tr>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Yashita Raga Saranam</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">BPMN and Coding Specialist</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Completed coding tasks 3 and 4, built BPMN model reflecting processes.</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Learned about process visualization and multi-tool integration.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.1);">
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Yashita Raga Saranam</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">BPMN and Coding Specialist</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Completed coding tasks 3 and 4, built BPMN model reflecting processes.</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Learned about process visualization and multi-tool integration.</td>
             </tr>
-            <tr>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Haneesha Donepudi</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Use Case Model Designer</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Created use case models defining system interactions and roles.</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Developed clear communication skills for technical concepts.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.2);">
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Haneesha Donepudi</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Use Case Model Designer</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Created use case models defining system interactions and roles.</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Developed clear communication skills for technical concepts.</td>
             </tr>
-            <tr>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Aishwarya Voraganti</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Documentation Specialist</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Developed and structured project documentation.</td>
-                <td style="border: 1px solid #FFFFFF; padding: 10px;">Improved technical writing and organization skills.</td>
+            <tr style="background-color: rgba(255, 255, 255, 0.1);">
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Aishwarya Voraganti</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Documentation Specialist</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Developed and structured project documentation.</td>
+                <td style="border: 1px solid #FFFFFF; padding: 15px;">Improved technical writing and organization skills.</td>
             </tr>
         </tbody>
     </table>
