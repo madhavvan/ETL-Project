@@ -25,7 +25,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
         </thead>
         <tbody>
             <tr style="background-color: rgba(255, 255, 255, 0.1);">
-                <td style="border: 1px solid #FFFFFF; padding: 15px;">Pallavi Vandanapu</td>
+                <td style="border: 1px solid #000000; padding: 15px;">Pallavi Vandanapu</td>
                 <td style="border: 1px solid #FFFFFF; padding: 15px;">Coding Specialist</td>
                 <td style="border: 1px solid #FFFFFF; padding: 15px;">Completed coding tasks 1 and 2 involving API integration and data processing.</td>
                 <td style="border: 1px solid #FFFFFF; padding: 15px;">Gained insights into FHIR APIs and real-world data transformation challenges.</td>
