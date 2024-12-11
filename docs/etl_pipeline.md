@@ -198,6 +198,9 @@
     </p>
 </div>
 
+<div class="image-container">
+    <img src="img_13.png" alt="ETL Image">
+</div>
 
 [Back to Home](index.md)
 
