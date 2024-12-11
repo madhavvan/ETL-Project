@@ -237,7 +237,24 @@ def get_patient_resource_id():
     </p>
 </div>
 
-```python
+```html
+<style>
+    .small-container {
+        width: 90%; /* Adjust the width to make it slightly smaller */
+        max-width: 700px; /* Maximum width for readability */
+        margin: 20px auto; /* Center alignment */
+        padding: 20px; /* Padding inside the container */
+        border-radius: 10px; /* Rounded corners */
+        background: linear-gradient(135deg, #F8F8FF, #E6E6FA); /* Subtle gradient */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Light shadow */
+        font-family: 'Georgia', serif;
+        font-size: 1rem; /* Adjusted font size */
+        overflow: auto; /* Scrollbar if content overflows */
+    }
+</style>
+
+<div class="small-container">
+    <!-- ```python
 def get_fhir_patient(resource_id):
     url = f'{BASE_URL}/Patient/{resource_id}'
     response = requests.get(url=url, headers=get_headers())
@@ -261,6 +278,31 @@ def get_fhir_patient(resource_id):
     given_name = data['name'][0]['given'][0]
     possible_integers = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
     address = data.get('address', [{}])[0]
+
+    line = address.get('line', [''])[0]
+    city = address.get('city', '')
+    district = address.get('district', '-')
+    state = address.get('state', '')
+    postal_code = address.get('postalCode', '')
+    text = f"{line}, {city}, {state}, {postal_code}"
+    unique_patient_id = random.choice(possible_integers)
+    today_date = datetime.today().date().isoformat()
+    gender = data.get('gender')
+
+    # Populate the patient template
+    patient_template_dict["birthDate"] = birth_date
+    patient_template_dict["name"][0]["family"] = family_name
+    patient_template_dict["name"][0]["given"][0] = given_name
+    patient_template_dict["address"][0]["line"][0] = line
+    patient_template_dict["address"][0]["city"] = city
+    patient_template_dict["address"][0]["district"] = district
+    patient_template_dict["address"][0]["state"] = state
+    patient_template_dict["address"][0]["postalCode"] = postal_code
+    patient_template_dict["identifier"][0]["period"]["start"] = today_date
+    patient_template_dict["identifier"][0]["value"] = unique_patient_id
+    patient_template_dict["text"] = text
+    patient_template_dict["gender"] = gender -->
+</div>
 ```
 
 <div class="image-container">
