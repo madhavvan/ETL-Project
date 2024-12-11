@@ -202,6 +202,101 @@
     <img src="img_13.png" alt="ETL Image">
 </div>
 
+<div class="etl-card">
+    <h2>Task 1: Patient Template Dictionary</h2>
+    <p>
+        We created the <code>patient_template_dict</code> in the <strong>data</strong> directory to serve as a predefined structure for patient data. This template is essential for transforming raw data into the required format for submission to the Primary Care EHR, ensuring compliance with the FHIR standard.
+    </p>
+</div>
+
+<div class="image-container">
+    <img src="img_14.png" alt="ETL Image">
+</div>
+
+<div class="image-container">
+    <img src="img_15.png" alt="ETL Image">
+</div>
+
+<div class="etl-card">
+    <h2>Task 2: Processing and Uploading Second Condition</h2>
+    <p>
+        With the use of the <code>patient_resource_id.txt</code> file, which stores the generated Patient Resource ID from the first task, we successfully retrieved and processed the second medical condition associated with the patient. Utilizing the SNOMED code from the second condition, we identified and created its corresponding child concept term. This enriched clinical detail was then transformed into a structured format using the predefined template and uploaded to the Primary Care EHR system as a new condition entry, ensuring accurate and comprehensive patient data representation.
+    </p>
+</div>
+
+<div class="image-container">
+    <img src="img_16.png" alt="ETL Image">
+</div>
+
+<div class="etl-card">
+    <h2>Task 3: Posting an Observation</h2>
+    <p>
+        In Task 3, we aimed to post an Observation for the previously created patient directly into the Primary Care EHR. Unlike the earlier tasks, this step did not involve querying the OpenEMR system. Instead, the observation data was manually prepared in a JSON file formatted to comply with FHIR standards. 
+    </p>
+    <p>
+        The Python script utilized a function to read the observation data from the JSON file and another function to post this data to the Primary Care EHR's FHIR endpoint. This approach simplified the process by bypassing external queries and focusing solely on the transformation and loading of pre-formatted observation data, ensuring accuracy and seamless integration into the EHR system.
+    </p>
+</div>
+
+
+<div class="image-container">
+    <img src="img_17.png" alt="ETL Image">
+</div>
+
+
+<div class="image-container">
+    <img src="img_18.png" alt="ETL Image">
+</div>
+
+<div class="etl-card">
+    <h2>Task 4: Documenting a Medical Procedure</h2>
+    <p>
+        In Task 4, a medical procedure was documented for the created patient by crafting a JSON file in the required FHIR format. This file, <strong>procedure.json</strong>, was structured to include all necessary fields, such as the patient reference, practitioner details, and procedure code.
+    </p>
+    <p>
+        Using the <strong>TASK_4_post.py</strong> script, the JSON file was read and posted to the Primary Care EHR system, ensuring seamless integration of procedure details.
+    </p>
+</div>
+
+<div class="image-container">
+    <img src="img_19.png" alt="ETL Image">
+</div>
+
+<div class="image-container">
+    <img src="img_20.png" alt="ETL Image">
+</div>
+
+<div class="etl-card">
+    <h2>Challenges</h2>
+    <p>
+        Several challenges were encountered during the process of fetching the parent and child terms for conditions, primarily due to incorrect usage of endpoints. These issues were resolved by refining the ECL query and thoroughly testing the endpoints to ensure accuracy.
+    </p>
+    <p>
+        On the other hand, the authentication process and patient retrieval were executed smoothly, largely thanks to the exercises and guidance provided during class sessions. Ultimately, all tasks were successfully completed, and the loaded patient data, along with the associated conditions and procedures, were integrated seamlessly into the Primary Care EHR.
+    </p>
+</div>
+
+<div class="image-container">
+    <img src="img_21.png" alt="ETL Image">
+</div>
+
+<div class="image-container">
+    <img src="img_22.png" alt="ETL Image">
+</div>
+
+<div class="image-container">
+    <img src="img_23.png" alt="ETL Image">
+</div>
+
+<div class="image-container">
+    <img src="img_24.png" alt="ETL Image">
+</div>
+
+<div class="image-container">
+    <img src="img_25.png" alt="ETL Image">
+</div>
+
+
 [Back to Home](index.md)
 
 <!DOCTYPE html>
