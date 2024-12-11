@@ -10,18 +10,18 @@
             padding: 0;
             overflow: hidden;
             background: black; /* Black background for premium effect */
-            color: #FFD700; /* Gold text for premium look */
             font-family: 'Arial', sans-serif;
         }
 
         h1 {
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
             font-size: 4rem;
             text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8), 0 0 50px #FFD700, 0 0 100px #FFD700;
+            color: #FFD700;
             animation: pulse 2s infinite;
         }
 
@@ -41,10 +41,25 @@
             width: 100vw;
             height: 100vh;
             pointer-events: none;
+            z-index: 1;
+        }
+
+        .professor-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Circular image */
+            border: 5px solid #FFD700; /* Gold border */
+            box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
         }
     </style>
 </head>
 <body>
+    <img class="professor-image" src="gopi_profile-1.jpg" alt="Professor">
     <h1>Surprise, Professor! 🎇</h1>
     <canvas class="fireworks"></canvas>
 
