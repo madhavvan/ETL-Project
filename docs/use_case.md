@@ -11,10 +11,25 @@
 # Use Case Diagram
 
 ## Overview
+
 The use case diagram outlines the actors and interactions in the ETL pipeline process.
 
-![img_10.png](img_10.png)
+<img
+    alt="img_10.png"
+    height="700"
+    src="img.png"
+    width="1100"
+    style="border: 5px solid #F0F8FF; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+    class="hover-image"
+/>
 
+<style>
+    /* Hover Effect for Image */
+    .hover-image:hover {
+        transform: translateY(-10px); /* Pop-Up Effect */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Enhanced Shadow on Hover */
+    }
+</style>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin: 20px auto; max-width: 1200px;">
 
