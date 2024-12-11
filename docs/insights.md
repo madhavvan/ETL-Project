@@ -5,6 +5,7 @@
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,9 +50,9 @@
             text-align: justify;
         }
 
-        /* Card Styling */
+        /* Card Styling with Light Color Effects */
         .card {
-            background: #FFFFFF;
+            background: linear-gradient(135deg, #FFFFFF, #F8F8FF); /* Subtle white to lavender */
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -59,13 +60,11 @@
             max-width: 800px;
         }
 
-        .card h2 {
-            color: #4B0082;
-            font-size: 1.8rem;
-        }
-
-        .card p {
-            color: #333;
+        .card:hover {
+            background: linear-gradient(135deg, #F0F8FF, #E6E6FA); /* Slightly deeper lavender on hover */
+            transform: scale(1.02); /* Zoom effect */
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
         }
 
         /* List Styling */
@@ -136,9 +135,12 @@
         </ul>
     </div>
 
-
+    <footer>
+        &copy; 2024 Project Insights. All Rights Reserved.
+    </footer>
 </body>
 </html>
+
 
 [Back to Home](index.md)
 
