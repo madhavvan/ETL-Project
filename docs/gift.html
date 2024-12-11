@@ -71,9 +71,9 @@
 
             explode() {
                 this.exploded = true;
-                for (let i = 0; i < 300; i++) { // Increased particles for grandeur
+                for (let i = 0; i < 500; i++) { // Increased particles for grandeur
                     const angle = Math.random() * Math.PI * 2;
-                    const speed = Math.random() * 6 + 2; // Speed for realistic bursts
+                    const speed = Math.random() * 8 + 3; // Speed for realistic bursts
                     const vx = Math.cos(angle) * speed;
                     const vy = Math.sin(angle) * speed;
                     this.particles.push({ x: this.x, y: this.y, vx, vy, alpha: 1 });
@@ -87,7 +87,7 @@
                     this.particles.forEach((p, index) => {
                         p.x += p.vx;
                         p.y += p.vy;
-                        p.alpha -= 0.01; // Smooth fade-out
+                        p.alpha -= 0.015; // Smooth fade-out
                         if (p.alpha <= 0) this.particles.splice(index, 1);
                     });
                 }
@@ -114,7 +114,7 @@
             fireworks.push(new Firework(x, y));
         }
 
-        setInterval(createFirework, 800); // Frequent explosions for a vibrant display
+        setInterval(createFirework, 400); // Frequent explosions for a vibrant display
 
         function loop() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -130,4 +130,3 @@
     </script>
 </body>
 </html>
-
