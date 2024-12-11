@@ -77,7 +77,6 @@
 
 ## Transformation
 - Data is cleaned and formatted for the target API.
-- 
 <div class="etl-card">
     <h2>Transformation Phase</h2>
     <p>
@@ -101,6 +100,19 @@
             </ul>
         </li>
     </ul>
+</div>
+
+
+## Loading
+- Processed data is posted back to the target API.
+<div class="etl-card">
+    <h2>Loading Phase</h2>
+    <p>
+        The <strong>src</strong> package in our project serves as a centralized location for core functionality, including data extraction, transformation, and loading (ETL). It ensures modularity, ease of maintenance, and clear organization of project-specific modules and scripts.
+    </p>
+    <p>
+        The following snippet illustrates the arrangement of our project for the Loading phase.
+    </p>
 </div>
 
 
@@ -176,11 +188,6 @@
 
 
 
-
-
-
-## Loading
-- Processed data is posted back to the target API.
 
 [Back to Home](index.md)
 
