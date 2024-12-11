@@ -198,9 +198,37 @@
     </p>
 </div>
 
-<div class="image-container">
-    <img src="img_13.png" alt="ETL Image">
-</div>
+```{python}
+# Importing required modules
+from data.datatemplates import patient_template_dict, condition_template_dict
+from src.registration import data_dir
+from src.snomed_links import constraint_parent, expression_constraint
+
+# Base URLs
+BASE_URL = "https://in-info-web20.luddy.indianapolis.iu.edu/apis/default/fhir"
+BASE_PRIMARY_CARE_URL = "http://137.184.71.65:8080/fhir"
+BASE_HERMES_URL = "http://159.65.173.51:8080/v1/snomed"
+
+# Function to get access token from a file
+def get_access_token_from_file():
+    ...
+
+# Function to get headers
+def get_headers():
+    ...
+
+# Function to get patient resource ID
+def get_patient_resource_id():
+    file_path = data_dir / "patient_resource_id.txt"
+    try:
+        with open(file_path, 'r') as file:
+            resource_id = file.read().strip()
+            return resource_id
+    except FileNotFoundError:
+        print(f"Error: {file_path} not found.")
+        return None
+```
+        
 
 <div class="etl-card">
     <h2>Task 1: Patient Template Dictionary</h2>
