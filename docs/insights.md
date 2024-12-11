@@ -5,17 +5,18 @@
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Insights</title>
+   
     <style>
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #E6E6FA, #FFFFFF); /* Lavender gradient */
+            background: #FFFFE0; /* Lavender gradient */
             margin: 0;
             padding: 20px;
             color: #333;
