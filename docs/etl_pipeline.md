@@ -31,7 +31,7 @@
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #90EE90;  
+            background-color: #CCFFCC;  
             margin: 0;
             padding: 0;
             line-height: 1.6;

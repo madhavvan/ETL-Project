@@ -27,8 +27,8 @@
 
 
 
-<div class="hover-box" style="background: #6A5ACD; color: #F0F8FF; padding: 30px; border-radius: 15px; margin: 20px auto; width: 100%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-    <h3 style="color: #FFD700; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); font-size: 2rem;">The BPMN Model</h3>
+<div class="hover-box" style="background: #F8F9FA; color: #333333; padding: 30px; border-radius: 15px; margin: 20px auto; width: 100%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <h3 style="color: #6A5ACD; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); font-size: 2rem;">The BPMN Model</h3>
     <p>The BPMN model represents the referral and treatment process for a patient transitioning from a Primary Care Clinic to a hospital for specialist care. The workflow is divided into three key pools: Primary Care Clinic, Hospital Administration, and Specialist, each signifying distinct roles in the patient care process.</p>
 
     <p>The process begins in the Primary Care Clinic, where the care plan is created, patient medical records are updated, and follow-up care is scheduled. After these initial steps, the referral is sent to the hospital for specialist intervention.</p>
@@ -44,9 +44,10 @@
     /* Hover Effect for 3D Pop-Up */
     .hover-box:hover {
         transform: translateY(-10px); /* Pop-Up Effect */
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Enhanced Shadow on Hover */
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Enhanced Shadow on Hover */
     }
 </style>
+
 
 [Back to Home](index.md)
 
