@@ -137,7 +137,7 @@
     </div>
 
     <h1>Visualization</h1>
-![img_8.png](img_8.png)
+    <img src="img_8.png">
 </body>
 </html>
 
