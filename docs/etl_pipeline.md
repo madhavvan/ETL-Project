@@ -297,7 +297,7 @@
 </div>
 
 <div class="image-container">
-    <img src="WhatsApp Video 2024-12-11 at 04.47.06_141e515b.mp4" alt="ETL Image">
+    <img src="WhatsApp Video.gif" alt="ETL Image">
 </div>
 
 [Back to Home](index.md)
