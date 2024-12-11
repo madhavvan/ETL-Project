@@ -237,24 +237,6 @@ def get_patient_resource_id():
     </p>
 </div>
 
-```html
-<style>
-    .small-container {
-        width: 90%; /* Adjust the width to make it slightly smaller */
-        max-width: 700px; /* Maximum width for readability */
-        margin: 20px auto; /* Center alignment */
-        padding: 20px; /* Padding inside the container */
-        border-radius: 10px; /* Rounded corners */
-        background: linear-gradient(135deg, #F8F8FF, #E6E6FA); /* Subtle gradient */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Light shadow */
-        font-family: 'Georgia', serif;
-        font-size: 1rem; /* Adjusted font size */
-        overflow: auto; /* Scrollbar if content overflows */
-    }
-</style>
-
-<div class="small-container">
-```
 ```python
 def get_fhir_patient(resource_id):
     url = f'{BASE_URL}/Patient/{resource_id}'
@@ -403,6 +385,23 @@ def get_fhir_patient(resource_id):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETL Project Overview</title>
 
+
+<style>
+    .small-container {
+        width: 90%; /* Adjust the width to make it slightly smaller */
+        max-width: 700px; /* Maximum width for readability */
+        margin: 20px auto; /* Center alignment */
+        padding: 20px; /* Padding inside the container */
+        border-radius: 10px; /* Rounded corners */
+        background: linear-gradient(135deg, #F8F8FF, #E6E6FA); /* Subtle gradient */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Light shadow */
+        font-family: 'Georgia', serif;
+        font-size: 1rem; /* Adjusted font size */
+        overflow: auto; /* Scrollbar if content overflows */
+    }
+</style>
+
+<div class="small-container">
     <style>
         /* General Styling */
         body {
