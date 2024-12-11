@@ -20,8 +20,8 @@
             transform: translate(-50%, -50%);
             color: #FFD700; /* Gold */
             font-family: 'Arial', sans-serif;
-            font-size: 3rem;
-            text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+            font-size: 4rem;
+            text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8), 0 0 30px #FFD700, 0 0 60px #FFD700;
             z-index: 10;
         }
 
@@ -32,80 +32,80 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
+            z-index: 0;
         }
 
-        .professor-image {
+        canvas {
             position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0.8);
-            z-index: 9;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.7);
-        }
-
-        /* Keyframes for Fireworks */
-        @keyframes explode {
-            0% {
-                transform: scale(0);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(2);
-                opacity: 0;
-            }
-        }
-
-        .firework {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: radial-gradient(circle, #FF4500, #FFD700);
-            border-radius: 50%;
-            animation: explode 1.5s infinite ease-in-out;
-            opacity: 0;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
 <body>
     <h1>Surprise, Professor! 🎉</h1>
-    <img class="professor-image" src="professor_image.jpg" alt="Professor">
-    <div class="fireworks" id="fireworks"></div>
-
-    <audio id="crackleSound" loop>
-        <source src="crackle.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+    <div class="fireworks"></div>
 
     <script>
-        const fireworksContainer = document.getElementById('fireworks');
-        const sound = document.getElementById('crackleSound');
+        // Fireworks Effect
+        class Firework {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.exploded = false;
+                this.particles = [];
+                this.color = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            }
 
-        // Function to create a firework
-        function createFirework() {
-            const firework = document.createElement('div');
-            firework.className = 'firework';
-            firework.style.top = Math.random() * 100 + '%';
-            firework.style.left = Math.random() * 100 + '%';
-            firework.style.animationDelay = Math.random() * 2 + 's';
-            fireworksContainer.appendChild(firework);
+            explode() {
+                this.exploded = true;
+                for (let i = 0; i < 100; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const speed = Math.random() * 5;
+                    const vx = Math.cos(angle) * speed;
+                    const vy = Math.sin(angle) * speed;
+                    this.particles.push({ x: this.x, y: this.y, vx, vy, alpha: 1 });
+                }
+            }
 
-            // Remove firework after animation
-            setTimeout(() => firework.remove(), 1500);
+            update(ctx) {
+                if (!this.exploded) {
+                    this.explode();
+                } else {
+                    this.particles.forEach((p, i) => {
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        p.alpha -= 0.02;
+                        if (p.alpha <= 0) this.particles.splice(i, 1);
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+                        ctx.fillStyle = `rgba(255,255,255,${p.alpha})`;
+                        ctx.fill();
+                    });
+                }
+            }
         }
 
-        // Generate fireworks every 500ms
-        setInterval(createFirework, 500);
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        document.querySelector('.fireworks').appendChild(canvas);
 
-        // Play crackle sound on load
-        window.onload = function () {
-            sound.volume = 0.5;
-            sound.play().catch(() => {
-                console.log('Audio autoplay is blocked. Click anywhere to start the sound.');
+        const fireworks = [];
+        setInterval(() => {
+            fireworks.push(new Firework(Math.random() * canvas.width, Math.random() * canvas.height));
+        }, 500);
+
+        function loop() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            fireworks.forEach((fw, i) => {
+                fw.update(ctx);
+                if (fw.particles.length === 0) fireworks.splice(i, 1);
             });
-        };
+            requestAnimationFrame(loop);
+        }
+        loop();
     </script>
 </body>
 </html>
