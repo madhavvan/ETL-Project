@@ -63,11 +63,14 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .use-case-card h2 {
+    .hover-card h2 {
         color: #4B0082; /* Violet for headers */
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         font-size: 1.5rem;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 1.2; /* Adjust line-height for multiline text */
+        word-spacing: 2px; /* Optional: Adjust spacing for words */
     }
 
     .use-case-card:hover {
