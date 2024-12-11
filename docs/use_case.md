@@ -16,7 +16,7 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
 ![img_10.png](img_10.png)
 
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin: 20px auto; max-width: 1200px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin: 10px auto; max-width: 1200px;">
 
     <!-- Card 1: Use Case Overview -->
     <div class="use-case-card" style="background: linear-gradient(135deg, #FFE4E1, #FFB6C1);">
