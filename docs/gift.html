@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grand Fireworks Celebration</title>
+    <title>Premium Fireworks Celebration</title>
     <style>
-        /* General Styling */
         body {
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background: radial-gradient(circle, #000000, #1a1a1a, #333333); /* Elegant black gradient */
+            background: radial-gradient(circle, #000000, #0d0d0d, #1a1a1a); /* Premium dark gradient */
+            color: #FFD700; /* Gold for text */
+            font-family: 'Arial', sans-serif;
         }
 
         h1 {
@@ -18,97 +19,107 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #FFD700; /* Gold */
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            font-size: 4rem;
-            text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.8), 0 0 30px #FFD700, 0 0 60px #FFD700;
             z-index: 10;
+            font-size: 4rem;
+            text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8), 0 0 50px #FFD700, 0 0 100px #FFD700;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
         }
 
         .fireworks {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             pointer-events: none;
-            z-index: 0;
-        }
-
-        canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
         }
     </style>
 </head>
 <body>
-    <h1>Surprise, Professor! 🎉</h1>
-    <div class="fireworks"></div>
+    <h1>Surprise, Professor! 🎇</h1>
+    <canvas class="fireworks"></canvas>
 
     <script>
-        // Enhanced Fireworks Effect
+        const canvas = document.querySelector('.fireworks');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
         class Firework {
             constructor(x, y) {
                 this.x = x;
                 this.y = y;
                 this.exploded = false;
                 this.particles = [];
-                this.color = `hsl(${Math.random() * 360}, 100%, 60%)`; // Vibrant colors
+                this.color = `hsl(${Math.random() * 360}, 100%, 70%)`; // Bright premium colors
             }
 
             explode() {
                 this.exploded = true;
-                for (let i = 0; i < 200; i++) { // Increased particles
+                for (let i = 0; i < 300; i++) { // Increased particles for grandeur
                     const angle = Math.random() * Math.PI * 2;
-                    const speed = Math.random() * 8; // Larger bursts
+                    const speed = Math.random() * 6 + 2; // Speed for realistic bursts
                     const vx = Math.cos(angle) * speed;
                     const vy = Math.sin(angle) * speed;
-                    const size = Math.random() * 3 + 2; // Larger particle sizes
-                    this.particles.push({ x: this.x, y: this.y, vx, vy, alpha: 1, size });
+                    this.particles.push({ x: this.x, y: this.y, vx, vy, alpha: 1 });
                 }
             }
 
-            update(ctx) {
+            update() {
                 if (!this.exploded) {
                     this.explode();
                 } else {
-                    this.particles.forEach((p, i) => {
+                    this.particles.forEach((p, index) => {
                         p.x += p.vx;
                         p.y += p.vy;
-                        p.alpha -= 0.015; // Slower fade-out
-                        if (p.alpha <= 0) this.particles.splice(i, 1);
+                        p.alpha -= 0.01; // Smooth fade-out
+                        if (p.alpha <= 0) this.particles.splice(index, 1);
+                    });
+                }
+            }
+
+            draw() {
+                if (this.exploded) {
+                    this.particles.forEach((p) => {
                         ctx.beginPath();
-                        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                        ctx.fillStyle = `rgba(255, 255, 255,${p.alpha})`;
-                        ctx.shadowBlur = 15; // Glow effect
+                        ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+                        ctx.fillStyle = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, ${p.alpha})`;
+                        ctx.shadowBlur = 20;
                         ctx.shadowColor = this.color;
-                        ctx.fillStyle = `rgba(${255 - Math.random() * 100}, ${Math.random() * 255}, ${Math.random() * 255}, ${p.alpha})`;
                         ctx.fill();
                     });
                 }
             }
         }
 
-        const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        document.querySelector('.fireworks').appendChild(canvas);
-
         const fireworks = [];
-        setInterval(() => {
-            fireworks.push(new Firework(Math.random() * canvas.width, Math.random() * canvas.height));
-        }, 300); // Faster intervals for more frequent explosions
+        function createFirework() {
+            const x = Math.random() * canvas.width;
+            const y = Math.random() * canvas.height / 2; // Fireworks launch into the upper half of the screen
+            fireworks.push(new Firework(x, y));
+        }
+
+        setInterval(createFirework, 800); // Frequent explosions for a vibrant display
 
         function loop() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             fireworks.forEach((fw, i) => {
-                fw.update(ctx);
+                fw.update();
+                fw.draw();
                 if (fw.particles.length === 0) fireworks.splice(i, 1);
             });
             requestAnimationFrame(loop);
         }
+
         loop();
     </script>
 </body>
