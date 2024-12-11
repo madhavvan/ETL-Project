@@ -261,7 +261,8 @@ def get_fhir_patient(resource_id):
     given_name = data['name'][0]['given'][0]
     possible_integers = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
     address = data.get('address', [{}])[0]
-
+```
+```python
     line = address.get('line', [''])[0]
     city = address.get('city', '')
     district = address.get('district', '-')
@@ -284,9 +285,10 @@ def get_fhir_patient(resource_id):
     patient_template_dict["identifier"][0]["period"]["start"] = today_date
     patient_template_dict["identifier"][0]["value"] = unique_patient_id
     patient_template_dict["text"] = text
-    patient_template_dict["gender"] = gender -->
-</div>
+    patient_template_dict["gender"] = gender
+    patient_template_dict["Address"][0]["text"] = text
 ```
+
 
 <div class="image-container">
     <img src="img_15.png" alt="ETL Image">
