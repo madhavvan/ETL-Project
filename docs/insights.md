@@ -146,7 +146,11 @@ The y-axis represents the count of patients.
 The bar for "female" is significantly taller than the bar for "male," indicating a higher count of female patients in the dataset retrieved from OpenEMR.
 The bars are displayed in light blue color for better visibility.
 This chart highlights that, according to the OpenEMR data, the number of female patients is notably higher than that of male patients.
-
+    
+    <div class="card">
+        <h2>Streamlined Data Interoperability</h2>
+        <p>Implementing the ETL pipeline using FHIR APIs highlighted the potential for seamless data exchange between healthcare systems. For example, integrating patient conditions and observations demonstrated how interoperability can support comprehensive care.</p>
+    </div>
 </body>
 </html>
 
