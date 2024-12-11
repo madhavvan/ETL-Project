@@ -20,8 +20,8 @@
             transform: translate(-50%, -50%);
             z-index: 10;
             text-align: center;
-            color: #00FF00;
-            text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8), 0 0 50px #FFD700, 0 0 100px #FFD700;
+            color: #FFD700;
+            text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8), 0 0 50px #FF4500, 0 0 100px #FFD700;
             font-size: 4rem;
             animation: pulse 2s infinite;
         }
@@ -66,7 +66,6 @@
                 this.y = y;
                 this.exploded = false;
                 this.particles = [];
-                this.color = `hsl(${Math.random() * 360}, 100%, 70%)`; // Bright premium colors
             }
 
             explode() {
@@ -76,7 +75,8 @@
                     const speed = Math.random() * 8 + 3; // Speed for realistic bursts
                     const vx = Math.cos(angle) * speed;
                     const vy = Math.sin(angle) * speed;
-                    this.particles.push({ x: this.x, y: this.y, vx, vy, alpha: 1 });
+                    const color = `hsl(${Math.random() * 360}, 100%, 60%)`; // Random vibrant colors
+                    this.particles.push({ x: this.x, y: this.y, vx, vy, alpha: 1, color });
                 }
             }
 
@@ -87,7 +87,7 @@
                     this.particles.forEach((p, index) => {
                         p.x += p.vx;
                         p.y += p.vy;
-                        p.alpha -= 0.015; // Smooth fade-out
+                        p.alpha -= 0.01; // Smooth fade-out
                         if (p.alpha <= 0) this.particles.splice(index, 1);
                     });
                 }
@@ -99,8 +99,8 @@
                         ctx.beginPath();
                         ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
                         ctx.fillStyle = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, ${p.alpha})`;
-                        ctx.shadowBlur = 20;
-                        ctx.shadowColor = this.color;
+                        ctx.shadowBlur = 10;
+                        ctx.shadowColor = p.color; // Dynamic shadow colors
                         ctx.fill();
                     });
                 }
