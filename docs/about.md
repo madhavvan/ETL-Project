@@ -129,7 +129,7 @@
 
     <footer>
         <p>© 2024 ETL Project Team. All Rights Reserved.</p>
-        <p><a href="gift.md" style="color: #FFD700; text-decoration: none;">🎁 Click here for a special surprise!</a></p>
+        <a href="gift.html" style="color: #FFD700; text-decoration: none;">🎁 Click here for a special surprise!</a>
     </footer>
 
 </body>
