@@ -13,15 +13,28 @@
             font-family: 'Arial', sans-serif;
         }
 
-        h1 {
+        .professor-image {
             position: absolute;
-            top: 65%;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Circular image */
+            border: 5px solid #FFD700; /* Gold border */
+            box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
+        }
+
+        .professor-name {
+            position: absolute;
+            top: 55%; /* Adjusted below the image */
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
             font-size: 3rem;
-            text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.8), 0 0 50px #FFD700, 0 0 100px #FFD700;
             color: #FFD700;
+            text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8), 0 0 50px #FFD700, 0 0 100px #FFD700;
             animation: pulse 2s infinite;
         }
 
@@ -43,27 +56,11 @@
             pointer-events: none;
             z-index: 1;
         }
-
-        .professor-image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 5;
-            width: 220px;
-            height: 220px;
-            border-radius: 50%; /* Circular image */
-            border: 5px solid #FFD700; /* Gold border */
-            box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
-        }
     </style>
 </head>
 <body>
-    <!-- Professor's Image -->
-    <img class="professor-image" src="img_7.png" alt="Dr GopiKrishnan Chandrasekharan">
-    <!-- Professor's Name -->
-    <h1>Dr. GopiKrishnan Chandrasekharan</h1>
-    <!-- Fireworks Effect -->
+    <img src="img_7.png" alt="Dr. GopiKrishnan Chandrasekharan" class="professor-image">
+    <h1 class="professor-name">Dr. GopiKrishnan Chandrasekharan</h1>
     <canvas class="fireworks"></canvas>
 
     <script>
