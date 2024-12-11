@@ -287,9 +287,25 @@ def get_fhir_patient(resource_id):
     patient_template_dict["text"] = text
     patient_template_dict["gender"] = gender
     patient_template_dict["Address"][0]["text"] = text
+
+
 ```
 
+**Extract Condition Data:**
 
+The function search_condition(patient_resource_id) is responsible for extracting condition data for a specific patient.
+The FHIR server is queried for conditions related to the given patient.
+```python
+def search_condition(patient_resource_id):
+    url = f'{BASE_URL}/Condition?patient={patient_resource_id}'  # Extract condition data
+    response = requests.get(url=url, headers=get_headers())
+    data = response.json()
+    if 'entry' in data:
+        conditions = data['entry']
+        first_condition = conditions[0]
+        snomed_code_from_openemr = first_condition["resource"]["code"]["coding"][0]["code"]
+        
+```
 <div class="image-container">
     <img src="img_15.png" alt="ETL Image">
 </div>
