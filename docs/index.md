@@ -6,6 +6,7 @@
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
 
+![img_27.png](img_27.png)
 
 <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 5px; flex-wrap: wrap; margin: 20px auto; width: 1100%; max-width: 1200px;">
 
