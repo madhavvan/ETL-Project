@@ -296,9 +296,11 @@
     <img src="img_25.png" alt="ETL Image">
 </div>
 
-<div class="image-container">
+<div class="video">
     <img src="WhatsApp Video.gif" alt="ETL Image">
 </div>
+
+
 
 [Back to Home](index.md)
 
