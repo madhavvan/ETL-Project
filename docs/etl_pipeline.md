@@ -82,7 +82,7 @@
     }
 </style>
 
-![img_11.png](img_11.png)
+                        ![img_11.png](img_11.png)
 
 ## Extraction
 - Uses Python to connect to FHIR APIs.
