@@ -7,7 +7,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 =======
 
 
-<div style="display: flex; flex-direction: row; justify-content: space-between; gap: 5px; flex-wrap: wrap; margin: 20px auto; width: 700%; max-width: 1200px;">
+<div style="display: flex; flex-direction: row; justify-content: space-between; gap: 5px; flex-wrap: wrap; margin: 20px auto; width: 1100%; max-width: 1200px;">
 
     <!-- Card 1: Introduction -->
     <div class="hover-card">
