@@ -253,7 +253,9 @@ def get_patient_resource_id():
     }
 </style>
 
-<div class="small-container">```python
+<div class="small-container">
+```
+```python
 def get_fhir_patient(resource_id):
     url = f'{BASE_URL}/Patient/{resource_id}'
     response = requests.get(url=url, headers=get_headers())
