@@ -43,13 +43,10 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
     </div>
 
     <!-- Card 5: Integrated Model -->
-    <div class="use-case-card" style="background: linear-gradient(135deg, #FFCCCB, #FFB6C1);">
-        <h2 style="color: #8B0000; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);">Integrated Model</h2>
-        <p style="color: #333; line-height: 1.8;">
-        The integrated model emphasizes collaboration and data-driven decision-making. It begins with patient referrals through HRMS, continues with data management in the EHR system, and leverages CDSS insights for treatment plans. Follow-ups are managed efficiently, ensuring continuity of care and improved patient outcomes.
-        </p>
+    <div class="use-case-card" style="background: linear-gradient(135deg, #ADD8E6, #87CEEB);">
+        <h2>Integrated Model</h2>
+        <p>The integrated model emphasizes collaboration and data-driven decision-making. It begins with patient referrals through HRMS, continues with data management in the EHR system, and leverages CDSS insights for treatment plans. Follow-ups are managed efficiently, ensuring continuity of care and improved patient outcomes.</p>
     </div>
-
 </div>
 
 <style>
