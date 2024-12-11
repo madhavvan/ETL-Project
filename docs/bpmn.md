@@ -27,26 +27,45 @@
 
 
 
-<div class="hover-box" style="background: #F8F9FA; color: #333333; padding: 30px; border-radius: 15px; margin: 20px auto; width: 100%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-    <h3 style="color: #6A5ACD; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); font-size: 2rem;">The BPMN Model</h3>
-    <p>The BPMN model represents the referral and treatment process for a patient transitioning from a Primary Care Clinic to a hospital for specialist care. The workflow is divided into three key pools: Primary Care Clinic, Hospital Administration, and Specialist, each signifying distinct roles in the patient care process.</p>
+<div style="background: #4B0082; padding: 40px;">
+    <!-- Box 1: Overview -->
+    <div class="hover-box" style="background: #E6E6FA; color: #333333; padding: 30px; border-radius: 15px; margin: 20px auto; width: 100%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <h3 style="color: #6A5ACD; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); font-size: 2rem;">Overview</h3>
+        <p>The BPMN model represents the referral and treatment process for a patient transitioning from a Primary Care Clinic to a hospital for specialist care. The workflow is divided into three key pools: Primary Care Clinic, Hospital Administration, and Specialist, each signifying distinct roles in the patient care process.</p>
+    </div>
 
-    <p>The process begins in the Primary Care Clinic, where the care plan is created, patient medical records are updated, and follow-up care is scheduled. After these initial steps, the referral is sent to the hospital for specialist intervention.</p>
+    <!-- Box 2: Primary Care Clinic -->
+    <div class="hover-box" style="background: #D8BFD8; color: #333333; padding: 30px; border-radius: 15px; margin: 20px auto; width: 100%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <h3 style="color: #6A5ACD; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); font-size: 2rem;">Primary Care Clinic</h3>
+        <p>The process begins in the Primary Care Clinic, where the care plan is created, patient medical records are updated, and follow-up care is scheduled. After these initial steps, the referral is sent to the hospital for specialist intervention.</p>
+    </div>
 
-    <p>In the Hospital Administration pool, the hospital receives and reviews the referral. A decision gateway assesses the validity of the referral. If valid, the patient is registered at the hospital. If not, a clarification request is sent back to the Primary Care Clinic, ensuring accuracy and preventing delays.</p>
+    <!-- Box 3: Hospital Administration -->
+    <div class="hover-box" style="background: #E6E6FA; color: #333333; padding: 30px; border-radius: 15px; margin: 20px auto; width: 100%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <h3 style="color: #6A5ACD; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); font-size: 2rem;">Hospital Administration</h3>
+        <p>In the Hospital Administration pool, the hospital receives and reviews the referral. A decision gateway assesses the validity of the referral. If valid, the patient is registered at the hospital. If not, a clarification request is sent back to the Primary Care Clinic, ensuring accuracy and preventing delays.</p>
+    </div>
 
-    <p>The Specialist pool handles the core treatment phase. The specialist evaluates the patient and determines the next steps. If no further care is needed, the patient is discharged with instructions for continued care, if necessary, at the Primary Care Clinic. If additional treatment is required, the specialist provides care and refers the patient back to the Primary Care Clinic for follow-up.</p>
+    <!-- Box 4: Specialist -->
+    <div class="hover-box" style="background: #D8BFD8; color: #333333; padding: 30px; border-radius: 15px; margin: 20px auto; width: 100%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <h3 style="color: #6A5ACD; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); font-size: 2rem;">Specialist</h3>
+        <p>The Specialist pool handles the core treatment phase. The specialist evaluates the patient and determines the next steps. If no further care is needed, the patient is discharged with instructions for continued care, if necessary, at the Primary Care Clinic. If additional treatment is required, the specialist provides care and refers the patient back to the Primary Care Clinic for follow-up.</p>
+    </div>
 
-    <p>This BPMN model emphasizes accurate decision-making, seamless communication, and continuity of care. It ensures all stakeholders—Primary Care Clinic, hospital administration, and specialists—work collaboratively to deliver efficient and patient-focused outcomes.</p>
+    <!-- Box 5: Conclusion -->
+    <div class="hover-box" style="background: #E6E6FA; color: #333333; padding: 30px; border-radius: 15px; margin: 20px auto; width: 100%; max-width: 1100px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); text-align: justify; font-family: 'Georgia', serif; font-size: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <h3 style="color: #6A5ACD; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); font-size: 2rem;">Conclusion</h3>
+        <p>This BPMN model emphasizes accurate decision-making, seamless communication, and continuity of care. It ensures all stakeholders—Primary Care Clinic, hospital administration, and specialists—work collaboratively to deliver efficient and patient-focused outcomes.</p>
+    </div>
 </div>
 
 <style>
-    /* Hover Effect for 3D Pop-Up */
     .hover-box:hover {
-        transform: translateY(-10px); /* Pop-Up Effect */
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Enhanced Shadow on Hover */
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
     }
 </style>
+
 
 
 [Back to Home](index.md)
