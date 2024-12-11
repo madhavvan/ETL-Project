@@ -26,7 +26,7 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
 
     <!-- Card 2: HRMS -->
     <div class="use-case-card" style="background: linear-gradient(135deg, #E6E6FA, #D8BFD8);">
-        <h2> Hospital Referral Management System (HRMS) </h2>
+        <h2>Hospital Referral Management System</h2>
         <p>The HRMS streamlines the referral process by enabling Primary Care Physicians to refer patients to hospitals and collaborate with Care Coordinators. It facilitates communication of treatment plans and management of follow-ups.</p>
     </div>
 
