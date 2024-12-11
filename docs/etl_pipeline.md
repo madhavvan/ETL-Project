@@ -187,6 +187,14 @@
 </style>
 
 
+![img_12.png](img_12.png)
+
+<div class="etl-card">
+    <h2>Code Demonstration: Patient Resource Creation</h2>
+    <p>
+        The below code demonstrates creating a patient resource in Primary Care EHR by using extracted data from FHIR. It saves the patient resource ID in <strong>patient_resource_id.txt</strong> for further processing and associates a condition with the created patient by transforming the SNOMED concept ID to its parent concept. The code also processes the second condition if available.
+    </p>
+</div>
 
 
 [Back to Home](index.md)
