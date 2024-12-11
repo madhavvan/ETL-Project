@@ -370,14 +370,46 @@ def post_observation(file_name, resource_name):
     data = read_data(file_name)
 
 ```
-    
+```python
+{
+    "resourceType": "Observation",
+    "id": "149",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2024-12-06T12:00:00+00:00",
+        "source": "#1234XYZ",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Blood Pressure Observation</div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:25f03c3a-88dd-45e2-99b2-32b6588a6123"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "vital-signs",
+                    "display": "Vital Signs"
+                }
+            ]
+        }
+    ]
+}
+
+```
 
 
 
-
-<div class="image-container">
-    <img src="img_18.png" alt="ETL Image">
-</div>
 
 <div class="etl-card">
     <h2>Task 4: Documenting a Medical Procedure</h2>
