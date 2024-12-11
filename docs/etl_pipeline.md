@@ -75,6 +75,33 @@
     </ul>
 </div>
 
+## Transformation
+- Data is cleaned and formatted for the target API.
+- 
+<div class="etl-card">
+    <h2>Transformation Phase</h2>
+    <p>
+        The transformation phase ensures data is clean, standardized, and formatted to match the target API’s schema. This phase involves:
+    </p>
+    <ul>
+        <li><strong>Validation and Normalization:</strong> Ensuring fields like dates (ISO 8601) and addresses are consistent and error-free.</li>
+        <li><strong>Clinical Data Mapping:</strong> Mapping clinical data to SNOMED CT codes using ECL queries for standardization.</li>
+        <li><strong>Handling Missing/Invalid Values:</strong> Addressing incomplete or incorrect data to maintain integrity.</li>
+    </ul>
+    <p>
+        The following tools and techniques are integral to the transformation process:
+    </p>
+    <ul>
+        <li><strong>Requests Library:</strong> Used for interacting with APIs, sending data, and retrieving responses.</li>
+        <li><strong>Print Function:</strong> Extensively utilized for debugging and verifying data transformations.</li>
+        <li><strong>Python Libraries:</strong>
+            <ul>
+                <li><strong>json:</strong> Streamlines data parsing and formatting.</li>
+                <li><strong>datetime:</strong> Facilitates date manipulation and formatting.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
 
 <style>
@@ -150,8 +177,7 @@
 
 
 
-## Transformation
-- Data is cleaned and formatted for the target API.
+
 
 ## Loading
 - Processed data is posted back to the target API.
