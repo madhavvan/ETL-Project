@@ -128,7 +128,8 @@
 
 
     <footer>
-        © 2024 ETL Project Team. All Rights Reserved.
+        <p>© 2024 ETL Project Team. All Rights Reserved.</p>
+        <p><a href="gift.md" style="color: #FFD700; text-decoration: none;">🎁 Click here for a special surprise!</a></p>
     </footer>
 
 </body>
