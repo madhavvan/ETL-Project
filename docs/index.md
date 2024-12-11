@@ -52,7 +52,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
         padding: 20px;
         border-radius: 15px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        width: 60%; /* 30% width for horizontal alignment */
+        width: 80%; 
         min-width: 300px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         font-family: 'Georgia', serif;
