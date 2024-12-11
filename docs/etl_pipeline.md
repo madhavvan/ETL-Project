@@ -34,6 +34,49 @@
     <img src="img_11.png" alt="ETL Image">
 </div>
 
+
+## Extraction
+- Uses Python to connect to FHIR APIs.
+<div class="etl-card">
+    <h2>Extraction Process</h2>
+    <p>
+        The extraction process involved retrieving data from two main APIs:
+    </p>
+    <h3>1. FHIR Server for OpenEMR</h3>
+    <ul>
+        <li><strong>Base URL:</strong> <a href="https://in-info-web20.luddy.indianapolis.iu.edu/apis/default/fhir" target="_blank">https://in-info-web20.luddy.indianapolis.iu.edu/apis/default/fhir</a></li>
+        <li><strong>Endpoints:</strong>
+            <ul>
+                <li><code>/Patient</code>: Retrieve patient details by ID or query parameters.</li>
+                <li><code>/Condition</code>: Fetch patient-specific medical conditions.</li>
+            </ul>
+        </li>
+        <li><strong>Authentication:</strong>
+            <ul>
+                <li>Used OAuth 2.0 for authentication.</li>
+                <li>Token management was performed by accessing the endpoint:</li>
+                <li><strong>Token URL:</strong> <a href="https://in-info-web20.luddy.indianapolis.iu.edu/oauth2/default/token" target="_blank">https://in-info-web20.luddy.indianapolis.iu.edu/oauth2/default/token</a></li>
+                <li>Refresh tokens were stored and updated using utility scripts.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>2. SNOMED CT</h3>
+    <ul>
+        <li><strong>Base URL:</strong> <a href="http://159.65.173.51:8080/v1/snomed" target="_blank">http://159.65.173.51:8080/v1/snomed</a></li>
+        <li><strong>Endpoints:</strong>
+            <ul>
+                <li><code>/concepts/{concept_id}</code>: Retrieve basic information for a given SNOMED concept.</li>
+                <li><code>/concepts/{concept_id}/extended</code>: Retrieves hierarchical parent relationships of the given SNOMED CT concept.</li>
+                <li><code>/concepts/{concept_id}/descriptions</code>: Fetches the descriptions or terms associated with a specific SNOMED CT concept.</li>
+            </ul>
+        </li>
+        <li><strong>Authentication:</strong> No authentication was required.</li>
+    </ul>
+</div>
+
+
+
 <style>
     /* Card Styling */
     .etl-card {
@@ -105,8 +148,7 @@
 </style>
 
 
-## Extraction
-- Uses Python to connect to FHIR APIs.
+
 
 ## Transformation
 - Data is cleaned and formatted for the target API.
