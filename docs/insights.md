@@ -5,33 +5,141 @@
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
 
-# Key Insights Gained from the Project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Insights</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #E6E6FA, #FFFFFF); /* Lavender gradient */
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.8;
+        }
 
-## Streamlined Data Interoperability: Implementing the ETL pipeline using FHIR APIs highlighted the potential for seamless data exchange between healthcare systems. For example, integrating patient conditions and observations demonstrated how interoperability can support comprehensive care.
+        h1, h2, h3 {
+            color: #4B0082; /* Deep Indigo */
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-## Enhanced Data Quality: The transformation process improved data consistency by handling missing fields and aligning with target system formats, which is critical for reliable analytics and decision-making.
+        h1 {
+            font-size: 2.5rem;
+        }
 
-## Error Handling Best Practices: Encountering API authentication and retrieval challenges emphasized the importance of robust error-handling mechanisms to ensure system reliability.
+        h2 {
+            font-size: 2rem;
+            margin-top: 30px;
+        }
 
-# General Reflection on the Project
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
 
-## Challenges:
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 10px 0;
+            text-align: justify;
+        }
 
-Handling inconsistent data formats between source and target APIs required additional transformation logic.
-Navigating complex FHIR API documentation and endpoints posed initial hurdles.
-Ensuring secure and seamless API connections involved overcoming authentication barriers.
+        /* Card Styling */
+        .card {
+            background: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
 
-## Lessons Learned:
+        .card h2 {
+            color: #4B0082;
+            font-size: 1.8rem;
+        }
 
-Comprehensive planning and understanding of FHIR API structures are essential for efficient ETL pipeline development.
-Modular coding practices enhance reusability and debugging across different ETL tasks.
-Collaboration and clear role definitions among team members significantly improve workflow efficiency.
+        .card p {
+            color: #333;
+        }
 
-## Potential Improvements:
+        /* List Styling */
+        ul {
+            list-style-type: square;
+            padding-left: 40px;
+            margin: 15px 0;
+        }
 
-Implementing more advanced data transformation techniques, such as machine learning-based imputation for missing data.
-Enhancing the visualization of insights with real-time dashboards for stakeholders.
-Automating end-to-end testing of the ETL pipeline to identify and resolve issues early.
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Key Insights Gained from the Project</h1>
+
+    <div class="card">
+        <h2>Streamlined Data Interoperability</h2>
+        <p>Implementing the ETL pipeline using FHIR APIs highlighted the potential for seamless data exchange between healthcare systems. For example, integrating patient conditions and observations demonstrated how interoperability can support comprehensive care.</p>
+    </div>
+
+    <div class="card">
+        <h2>Enhanced Data Quality</h2>
+        <p>The transformation process improved data consistency by handling missing fields and aligning with target system formats, which is critical for reliable analytics and decision-making.</p>
+    </div>
+
+    <div class="card">
+        <h2>Error Handling Best Practices</h2>
+        <p>Encountering API authentication and retrieval challenges emphasized the importance of robust error-handling mechanisms to ensure system reliability.</p>
+    </div>
+
+    <h1>General Reflection on the Project</h1>
+
+    <div class="card">
+        <h2>Challenges</h2>
+        <ul>
+            <li>Handling inconsistent data formats between source and target APIs required additional transformation logic.</li>
+            <li>Navigating complex FHIR API documentation and endpoints posed initial hurdles.</li>
+            <li>Ensuring secure and seamless API connections involved overcoming authentication barriers.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Lessons Learned</h2>
+        <ul>
+            <li>Comprehensive planning and understanding of FHIR API structures are essential for efficient ETL pipeline development.</li>
+            <li>Modular coding practices enhance reusability and debugging across different ETL tasks.</li>
+            <li>Collaboration and clear role definitions among team members significantly improve workflow efficiency.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Potential Improvements</h2>
+        <ul>
+            <li>Implementing more advanced data transformation techniques, such as machine learning-based imputation for missing data.</li>
+            <li>Enhancing the visualization of insights with real-time dashboards for stakeholders.</li>
+            <li>Automating end-to-end testing of the ETL pipeline to identify and resolve issues early.</li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
 
 [Back to Home](index.md)
 
