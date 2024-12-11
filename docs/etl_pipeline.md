@@ -30,10 +30,14 @@
     </ol>
 </div>
 
+<div class="image-container">
+    <img src="img_11.png" alt="ETL Image">
+</div>
+
 <style>
     /* Card Styling */
     .etl-card {
-        background: linear-gradient(135deg, #FFEBF0, #FFF1D6); /* Loving gradient with soft pink and peach */
+        background: linear-gradient(135deg, #F0FFF0, #E0FFE0); /* Soft gradient with light greens */
         padding: 30px;
         border-radius: 15px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -45,7 +49,7 @@
     }
 
     .etl-card h2 {
-        color: #FF69B4; /* Hot Pink for a loving header */
+        color: #006400; /* Dark green for the header */
         text-align: center;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         margin-bottom: 20px;
@@ -53,7 +57,7 @@
     }
 
     .etl-card h3 {
-        color: #FF6F61; /* Soft Coral for subheaders */
+        color: #228B22; /* Forest green for subheaders */
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         margin-bottom: 15px;
         font-size: 1.5rem;
@@ -78,11 +82,28 @@
     .etl-card:hover {
         transform: scale(1.05); /* Slight zoom-in effect */
         box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
-        background: linear-gradient(135deg, #FFF5E5, #FFD9E8); /* Softer gradient transition on hover */
+        background: linear-gradient(135deg, #E8FFE8, #D0FFD0); /* Brighter gradient transition on hover */
+    }
+
+    /* Image Container Styling */
+    .image-container {
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Body Styling for Bright Green Background */
+    body {
+        background-color: #7CFC00; /* Bright green background */
     }
 </style>
 
-                        ![img_11.png](img_11.png)
 
 ## Extraction
 - Uses Python to connect to FHIR APIs.
