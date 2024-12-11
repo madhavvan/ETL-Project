@@ -130,12 +130,14 @@
     <div class="card">
         <h2>Potential Improvements</h2>
         <ul>
-            <li>Implementing more advanced data transformation techniques, such as machine learning-based imputation for missing data.</li>
+            <li>Implementing more advanced data transformation techniques.</li>
             <li>Enhancing the visualization of insights with real-time dashboards for stakeholders.</li>
             <li>Automating end-to-end testing of the ETL pipeline to identify and resolve issues early.</li>
         </ul>
     </div>
 
+    <h1>Visualization</h1>
+![img_8.png](img_8.png)
 </body>
 </html>
 
