@@ -10,7 +10,7 @@
     alt="img_27.png"
     height="400"
     src="img_27.png"
-    width="400"
+    width="600"
     style="border: 5px solid #F0F8FF; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block; transition: transform 0.3s ease, box-shadow 0.3s ease;"
     class="hover-image"
 />
