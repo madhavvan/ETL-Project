@@ -136,9 +136,6 @@
         </ul>
     </div>
 
-    <footer>
-        &copy; 2024 Project Insights. All Rights Reserved.
-    </footer>
 </body>
 </html>
 
