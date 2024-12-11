@@ -26,13 +26,13 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
 
     <!-- Card 2: HRMS -->
     <div class="use-case-card" style="background: linear-gradient(135deg, #E6E6FA, #D8BFD8);">
-        <h2>Hospital Referral Management System</h2>
+        <h2>Hospital Referral Management System(HRMS)</h2>
         <p>The HRMS streamlines the referral process by enabling Primary Care Physicians to refer patients to hospitals and collaborate with Care Coordinators. It facilitates communication of treatment plans and management of follow-ups.</p>
     </div>
 
     <!-- Card 3: EHR System -->
     <div class="use-case-card" style="background: linear-gradient(135deg, #F0FFF0, #98FB98);">
-        <h2>Electronic Health Record System</h2>
+        <h2>Electronic Health Record System (EHR)</h2>
         <p>The EHR system serves as a secure central repository for storing, retrieving, and updating patient data. It ensures stakeholders have access to accurate and up-to-date information for informed decision-making.</p>
     </div>
 
