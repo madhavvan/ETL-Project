@@ -16,7 +16,7 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
 ![img_10.png](img_10.png)
 
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin: 10px auto; max-width: 1200px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin: 20px auto; max-width: 1200px;">
 
     <!-- Card 1: Use Case Overview -->
     <div class="use-case-card" style="background: linear-gradient(135deg, #FFE4E1, #FFB6C1);">
@@ -38,7 +38,7 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
 
     <!-- Card 4: CDSS -->
     <div class="use-case-card" style="background: linear-gradient(135deg, #FFFACD, #FFD700);">
-        <h2>ClinicalDecision Support System</h2>
+        <h2>Clinical Decision Support System</h2>
         <p>The CDSS analyzes data from the EHR system to provide actionable recommendations, such as diagnostic tests, treatment options, or discharge instructions, enhancing clinical workflows and improving patient outcomes.</p>
     </div>
 
@@ -56,7 +56,7 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
         border-radius: 15px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         width: 100%;
-        max-width: 350px;
+        max-width: 450px;
         font-family: 'Georgia', serif;
         color: #333;
         text-align: justify;
