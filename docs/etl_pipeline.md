@@ -510,9 +510,38 @@ def read_data(name_of_the_file):
     <img src="img_25.png" alt="ETL Image">
 </div>
 
-<div class="image-container">
-    <img src="img_26.png" alt="ETL Image">
-</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Effect Image</title>
+    <style>
+        .image-container {
+            position: relative;
+            width: 300px; /* Adjust width as needed */
+            overflow: hidden; /* Hide the overflow to clip the wave */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            clip-path: path("M0,100 C50,150 150,50 300,100 L300,300 L0,300 Z");
+        }
+
+        @media (max-width: 768px) {
+            .image-container img {
+                clip-path: path("M0,80 C40,120 160,60 300,80 L300,300 L0,300 Z");
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="img_26.png" alt="ETL Image">
+    </div>
+</body>
+</html>
 
 
 [Back to Home](index.md)
