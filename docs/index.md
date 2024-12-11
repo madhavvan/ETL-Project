@@ -25,6 +25,24 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
         <li><strong>Analytics Enablement:</strong> To gather data for downstream analytics that will aid clinical decision-making and operational insights.</li>
         <li><strong>Error Handling and Automation:</strong> To handle API complexity, assure data integrity, and automate common activities to improve efficiency.</li>
     </ul>
+
+        style="background: linear-gradient(120deg, #F0FFF0, #E6E6FA); padding: 40px; border-radius: 15px; margin: 20px auto; width: 90%; max-width: 1200px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); font-family: 'Georgia', serif;">
+        <h2 style="color: #4682B4; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); text-align: center;">Keys and Technologies Used</h2>
+        <p style="color: #333; font-size: 1.2rem; line-height: 1.8; text-align: justify;">
+        The ETL project incorporates a range of modern tools and technologies to provide smooth data extraction, transformation, and loading in the healthcare area. Python acts as the pipeline's backbone, allowing for rapid scripting and reliable error handling during API interactions.
+    </p>
+    <ul style="color: #333; font-size: 1.2rem; line-height: 1.8; padding-left: 40px;">
+        <li><strong>FHIR API:</strong> Follows HL7 standards to ensure uniform healthcare data exchange.</li>
+        <li><strong>JSON Structures:</strong> Used for formatting and transforming data during the extraction and transformation stages.</li>
+        <li><strong>Primary Care EHR FHIR Server:</strong> Serves as the system for loading and storing processed data.</li>
+        <li><strong>Camunda BPMN Modeler:</strong> Creates a visual representation of the workflow, aiding in understanding data flow and decision-making processes.</li>
+        <li><strong>GitHub Pages:</strong> Hosts the project website, featuring rich documentation, visuals, and resources.</li>
+        <li><strong>Hermes Terminology Server:</strong> Enables mapping of healthcare terminology, such as parent-child connections in SNOMED CT, enhancing robustness and interoperability.</li>
+    </ul>
+    <p style="color: #333; font-size: 1.2rem; line-height: 1.8; text-align: justify;">
+        These tools and technologies make the pipeline more robust and interoperable for a wide range of healthcare applications.
+    </p>
+
 </div>
 
 [Back to Home](index.md)
