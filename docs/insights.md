@@ -141,15 +141,16 @@
 
 
     <div class="card">
-        
-        <p>The image shows a bar chart titled "Patient Gender Distribution", displaying the gender-based distribution of patient counts retrieved from OpenEMR.
-
-            The x-axis represents the gender categories: "male" and "female."
-            The y-axis represents the count of patients.
-            The bar for "female" is significantly taller than the bar for "male," indicating a higher count of female patients in the dataset retrieved from OpenEMR.
-            The bars are displayed in light blue color for better visibility.
-            This chart highlights that, according to the OpenEMR data, the number of female patients is notably higher than that of male patients.</p>
+        <ul>
+            <li>The image shows a bar chart titled "Patient Gender Distribution," representing the gender-based distribution of patient counts retrieved from OpenEMR.</li>
+            <li>The x-axis represents the gender categories: "male" and "female."</li>
+            <li>The y-axis represents the count of patients.</li>
+            <li>The bar for "female" is significantly taller than the bar for "male," indicating a higher count of female patients in the dataset retrieved from OpenEMR.</li>
+            <li>The bars are displayed in light blue color for better visibility.</li>
+            <li>This chart highlights that the number of female patients is notably higher than that of male patients, according to the OpenEMR data.</li>
+        </ul>
     </div>
+
 </body>
 </html>
 
