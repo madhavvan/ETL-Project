@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+# ETL Project
 Welcome to the ETL project website. This project demonstrates the ETL pipeline using Python and FHIR APIs.
 
 
@@ -46,14 +39,6 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             color: #333;
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
-
-
-
-
-
-
-
-
         /* Header Styles */
         h1 {
             font-size: 2.8rem;
@@ -62,8 +47,6 @@ In a free hour, when our power of choice is untrammelled and when nothing preven
             margin-bottom: 20px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
-
-
     </style>
 </head>
 <body>
