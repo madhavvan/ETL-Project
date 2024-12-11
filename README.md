@@ -1,8 +1,4 @@
 # ETL Project
- ETL Project with FHIR APIs
-[ETL PROJECT](https://pages.github.iu.edu/vpentala/ETL-Project/)
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,12 +18,6 @@
         }
 
 
-
-
-
-
-
-
         /* Header Styles */
         h1 {
             font-size: 2.8rem;
@@ -43,9 +33,10 @@
 <body>
 
 
-    <footer>
-        <p>&copy; 2024 ETL Project. All Rights Reserved.</p>
-    </footer>
+ ETL Project with FHIR APIs
+[ETL PROJECT](https://pages.github.iu.edu/vpentala/ETL-Project/)
 
-</body>
-</html>
+
+
+
+
