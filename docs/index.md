@@ -110,7 +110,6 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
             color: #333;
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
-        
         /* Header Styles */
         h1 {
             font-size: 2.8rem;
@@ -119,52 +118,15 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
             margin-bottom: 20px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
-        
-        /* Full-Width Template */
-        .full-width-template {
-            background: linear-gradient(135deg, #F0F8FF, #E6E6FA); /* Gradient background */
-            padding: 20px 10%;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-            color: #333;
-            text-align: center;
-        }
-
-        .full-width-template h2 {
-            color: #4B0082; /* Violet header text */
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .full-width-template p {
-            color: #333;
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 <body>
-    <!-- Full-Width Template -->
-    <div class="full-width-template">
-        <h2>Welcome to the ETL Project</h2>
-        <p>The ETL project is designed to tackle data interoperability challenges in the healthcare domain by creating an efficient pipeline for data extraction, transformation, and loading using FHIR APIs.</p>
-        <p>This initiative focuses on using standardized protocols to enhance decision-making, optimize workflows, and improve patient outcomes. Dive into the details below to learn more about our journey!</p>
-    </div>
 
-    <h1>ETL Project Overview</h1>
+
+    <footer>
+        <p>&copy; 2024 ETL Project. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
-
-[//]: # ()
-[//]: # (    <footer>)
-
-[//]: # (        <p>&copy; 2024 ETL Project. All Rights Reserved.</p>)
-
-[//]: # (    </footer>)
-
-[//]: # ()
-[//]: # (</body>)
-
-[//]: # (</html>)
 
