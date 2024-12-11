@@ -30,7 +30,7 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
 
     <!-- Card 3: Keys and Technologies Used -->
     <div class="hover-card">
-        <h2>Keys and Technologies Used</h2>
+        <h2>Key Tools and Technologies Used</h2>
         <p>The ETL project incorporates a range of modern tools and technologies to provide smooth data extraction, transformation, and loading in the healthcare area.</p>
         <ul>
             <li><strong>Python:</strong> Serves as the pipeline's backbone, enabling rapid scripting and reliable error handling during API interactions.</li>
@@ -42,6 +42,20 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
             <li><strong>Hermes Terminology Server:</strong> Enables mapping of healthcare terminology, such as parent-child connections in SNOMED CT.</li>
         </ul>
     </div>
+
+    <div class="hover-card">
+        <h2>Summary of the Deliverables</h2>
+        <p>The ETL project deliverables include a thorough overview of the pipeline's design, implementation, and value. The project includes:</p>
+        <ul>
+            <li>A <strong>Python code repository</strong> showcasing scripts for extracting, processing, and loading healthcare data via the FHIR API, including comprehensive error handling and integration.</li>
+            <li>A professional <strong>GitHub Pages website</strong> documenting the entire project with an introduction, BPMN workflow diagrams, Use Case diagrams, and team contributions.</li>
+            <li>Visual insights displaying <strong>patient data trends</strong> and key analytics, highlighting the pipeline's practical uses.</li>
+            <li>A brief <strong>presentation</strong> outlining the ETL pipeline's features, challenges, and lessons learned, emphasizing its role in improving healthcare data interoperability.</li>
+            <li>Documentation of each team member's <strong>contributions, duties, and reflections</strong>, fostering collaboration and transparency.</li>
+         </ul>
+            <p>These deliverables collectively demonstrate the ETL pipeline's effectiveness in accelerating healthcare data exchange and analytics.</p>
+    </div>
+
 </div>
 
 <style>
