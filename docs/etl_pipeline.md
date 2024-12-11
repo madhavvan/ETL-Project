@@ -291,25 +291,6 @@ def get_fhir_patient(resource_id):
 
 ```
 
-**Extract Condition Data:**
-
-The function search_condition(patient_resource_id) is responsible for extracting condition data for a specific patient.
-The FHIR server is queried for conditions related to the given patient.
-```python
-def search_condition(patient_resource_id):
-    url = f'{BASE_URL}/Condition?patient={patient_resource_id}'  # Extract condition data
-    response = requests.get(url=url, headers=get_headers())
-    data = response.json()
-    if 'entry' in data:
-        conditions = data['entry']
-        first_condition = conditions[0]
-        snomed_code_from_openemr = first_condition["resource"]["code"]["coding"][0]["code"]
-        
-```
-<div class="image-container">
-    <img src="img_15.png" alt="ETL Image">
-</div>
-
 <div class="etl-card">
     <h2>Task 2: Processing and Uploading Second Condition</h2>
     <p>
@@ -317,9 +298,31 @@ def search_condition(patient_resource_id):
     </p>
 </div>
 
-<div class="image-container">
-    <img src="img_16.png" alt="ETL Image">
-</div>
+```python
+def search_condition_second_child(patient_resource_id):
+    """
+    Retrieve the second condition for a patient and post a new condition with the child concept term
+    """
+    url = f'{BASE_URL}/Condition?patient={patient_resource_id}'
+    response = requests.get(url=url, headers=get_headers())
+    if response.status_code == 200:
+        data = response.json()
+        if 'entry' in data:
+            conditions = data['entry']
+            # Check if there are at least two conditions
+            if len(conditions) > 1:
+                second_condition = conditions[1]  # Retrieve the second condition
+                snomed_code_from_openemr = second_condition["resource"]["code"]["coding"][0]["code"]
+                print(f"Retrieved SNOMED code from the second condition: {snomed_code_from_openemr}")
+
+                child_constraint = constraint_child(concept_id=snomed_code_from_openemr)
+                child_concept_id, child_concept_term = expression_constraint(search_string=child_constraint)
+                print(f"Identified Child Concept ID: {child_concept_id}")
+                print(f"Identified Child Preferred Term: {child_concept_term}")
+
+                condition_template_dict["code"]["text"] = child_concept_term
+                condition_template_dict["code"]["coding"][0]["display"] = child_concept_term
+```
 
 <div class="etl-card">
     <h2>Task 3: Posting an Observation</h2>
