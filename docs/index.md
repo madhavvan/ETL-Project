@@ -6,7 +6,22 @@
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
 
-![img_27.png](img_27.png)
+<img
+    alt="img_27.png"
+    height="400"
+    src="img_27.png"
+    width="400"
+    style="border: 5px solid #F0F8FF; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+    class="hover-image"
+/>
+
+<style>
+    /* Hover Effect for Image */
+    .hover-image:hover {
+        transform: translateY(-10px); /* Pop-Up Effect */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Enhanced Shadow on Hover */
+    }
+</style>
 
 <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 5px; flex-wrap: wrap; margin: 20px auto; width: 1100%; max-width: 1200px;">
 
