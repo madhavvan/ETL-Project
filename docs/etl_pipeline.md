@@ -187,7 +187,9 @@
 </style>
 
 
-![img_12.png](img_12.png)
+<div class="image-container">
+    <img src="img_12.png" alt="ETL Image">
+</div>
 
 <div class="etl-card">
     <h2>Code Demonstration: Patient Resource Creation</h2>
