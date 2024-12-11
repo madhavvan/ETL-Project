@@ -15,9 +15,9 @@
 The use case diagram outlines the actors and interactions in the ETL pipeline process.
 
 <img
-    alt="img_10.png"
+    alt="img_28.png"
     height="700"
-    src="img_10.png"
+    src="img_28.png"
     width="1100"
     style="border: 5px solid #F0F8FF; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); margin: 20px auto; display: block; transition: transform 0.3s ease, box-shadow 0.3s ease;"
     class="hover-image"
