@@ -38,7 +38,7 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
 
     <!-- Card 4: CDSS -->
     <div class="use-case-card" style="background: linear-gradient(135deg, #FFFACD, #FFD700);">
-        <h2>Clinical Decision Support System</h2>
+        <h2>ClinicalDecision Support System</h2>
         <p>The CDSS analyzes data from the EHR system to provide actionable recommendations, such as diagnostic tests, treatment options, or discharge instructions, enhancing clinical workflows and improving patient outcomes.</p>
     </div>
 
