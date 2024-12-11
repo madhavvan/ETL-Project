@@ -237,9 +237,31 @@ def get_patient_resource_id():
     </p>
 </div>
 
-<div class="image-container">
-    <img src="img_14.png" alt="ETL Image">
-</div>
+```python
+def get_fhir_patient(resource_id):
+    url = f'{BASE_URL}/Patient/{resource_id}'
+    response = requests.get(url=url, headers=get_headers())
+    
+    if response.status_code != 200:
+        print(f"Failed to fetch patient. Status Code: {response.status_code}")
+        print(f"Response Text: {response.text}")
+        return
+
+    data = response.json()
+    print("Response Data:", data)  # Debugging: Inspect the response structure
+
+    # Check if 'name' field exists
+    name_list = data.get("name", [])
+    if not name_list:
+        print("Error: 'name' field is missing or empty in the response.")
+        return
+
+    birth_date = data.get('birthDate')
+    family_name = data['name'][0]['family']
+    given_name = data['name'][0]['given'][0]
+    possible_integers = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+    address = data.get('address', [{}])[0]
+```
 
 <div class="image-container">
     <img src="img_15.png" alt="ETL Image">
