@@ -42,16 +42,15 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
             <li><strong>Hermes Terminology Server:</strong> Enables mapping of healthcare terminology, such as parent-child connections in SNOMED CT.</li>
         </ul>
     </div>
-
 </div>
 
 <style>
-    /* Styling for Hover Cards */
+    /* Styling for Hover Cards with Decorative Section Colors */
     .hover-card {
-        background: linear-gradient(135deg, #FDEBD0, #FAD7A0); /* Adjusted lighter gradient */
+        background: linear-gradient(135deg, #F8F8FF, #D8BFD8); /* Match the top decorative section gradient */
         padding: 20px;
         border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
         width: 80%; 
         min-width: 300px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -78,18 +77,18 @@ Welcome to the ETL project website. This project demonstrates the ETL pipeline u
     }
 
     .hover-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* More subtle shadow on hover */
+        transform: translateY(-8px); /* Pop-Up Effect */
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Enhanced Shadow on Hover */
     }
 
     /* For responsive alignment */
-        @media (max-width: 768px) {
+    @media (max-width: 768px) {
         .hover-card {
-        width: 90%; /* Optimized for smaller screens */
+            width: 90%; /* Full width for smaller screens */
         }
     }
-
 </style>
+
 
 
 [Back to Home](index.md)
