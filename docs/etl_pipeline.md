@@ -296,12 +296,10 @@
     <img src="img_25.png" alt="ETL Image">
 </div>
 
-<div class="etl-card">
-    <!-- Adding a GIF -->
-    <div style="text-align: center; margin-top: 20px;">
-        <img src="WhatsApp Video 2024-12-11 at 04.47.06_4eb625e2.mp4" alt="Success Celebration" style="max-width: 100%; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-    </div>
+<div class="image-container">
+    <img src="WhatsApp Video 2024-12-11 at 04.47.06_141e515b.mp4" alt="ETL Image">
 </div>
+
 [Back to Home](index.md)
 
 
