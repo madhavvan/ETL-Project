@@ -198,7 +198,7 @@
     </p>
 </div>
 
-```{python}
+```python
 # Importing required modules
 from data.datatemplates import patient_template_dict, condition_template_dict
 from src.registration import data_dir
