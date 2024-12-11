@@ -107,7 +107,7 @@
         </div>
 
         <div class="team-member">
-            <img src="img_4.png" alt="Venu Madhav Pentala">
+            <img src="img_9.png" alt="Venu Madhav Pentala">
             <h3>Venu Madhav Pentala</h3>
             <p>ETL Developer</p>
         </div>
