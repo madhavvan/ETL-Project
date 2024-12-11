@@ -43,10 +43,13 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
     </div>
 
     <!-- Card 5: Integrated Model -->
-    <div class="use-case-card" style="background: linear-gradient(135deg, #ADD8E6, #87CEEB);">
-        <h2>Integrated Model</h2>
-        <p>The integrated model emphasizes collaboration and data-driven decision-making. It begins with patient referrals through HRMS, continues with data management in the EHR system, and leverages CDSS insights for treatment plans. Follow-ups are managed efficiently, ensuring continuity of care and improved patient outcomes.</p>
+    <div class="use-case-card" style="background: linear-gradient(135deg, #FFCCCB, #FFB6C1);">
+        <h2 style="color: #8B0000; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);">Integrated Model</h2>
+        <p style="color: #333; line-height: 1.8;">
+        The integrated model emphasizes collaboration and data-driven decision-making. It begins with patient referrals through HRMS, continues with data management in the EHR system, and leverages CDSS insights for treatment plans. Follow-ups are managed efficiently, ensuring continuity of care and improved patient outcomes.
+        </p>
     </div>
+
 </div>
 
 <style>
@@ -56,7 +59,7 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
         border-radius: 15px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         width: 100%;
-        max-width: 450px;
+        max-width: 400px;
         font-family: 'Georgia', serif;
         color: #333;
         text-align: justify;
@@ -88,7 +91,7 @@ The use case diagram outlines the actors and interactions in the ETL pipeline pr
 
 [Back to Home](index.md)
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
