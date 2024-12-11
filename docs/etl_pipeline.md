@@ -6,7 +6,7 @@
 
 [Home](index.md) | [BPMN Model](bpmn.md) | [Use Case Model](use_case.md) | [ETL Pipeline](etl_pipeline.md) | [Insights](insights.md) | [Team Contributions](team.md) | [About](about.md)
 =======
-# fjj
+
 # ETL Pipeline Documentation
 
 <div class="etl-card">
@@ -421,13 +421,63 @@ def post_observation(file_name, resource_name):
     </p>
 </div>
 
-<div class="image-container">
-    <img src="img_19.png" alt="ETL Image">
-</div>
+```python
+import requests
+import json
+from pathlib import Path
 
-<div class="image-container">
-    <img src="img_20.png" alt="ETL Image">
-</div>
+# Define the base URL of the FHIR server
+BASE_SERVER_URL = "http://137.184.71.65:8080/fhir"
+
+# Define the directory for storing data files
+data_dir = Path.cwd() / 'data'
+
+def read_data(name_of_the_file):
+    """
+    Reads a JSON file and returns its content.
+    :param name_of_the_file: Name of the file to read (without .json extension)
+    :return: Parsed JSON content
+    """
+    json_file_path = data_dir / f"{name_of_the_file}.json"
+
+    try:
+        with open(json_file_path, 'r') as file:
+            data = json.load(file)
+            return data
+    except FileNotFoundError:
+        print(f"File not found: {json_file_path}")
+        exit()
+```
+
+```python
+{
+    "resourceType": "Procedure",
+    "id": "149",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/149"
+    },
+    "performer": [
+        {
+            "actor": {
+                "reference": "Practitioner/4",
+                "display": "Dr. John Doe"
+            }
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "86273004",
+                "display": "Biopsy procedure"
+            }
+        ],
+        "text": "Biopsy procedure"
+    }
+}
+
+```
 
 <div class="etl-card">
     <h2>Challenges</h2>
