@@ -296,9 +296,12 @@
     <img src="img_25.png" alt="ETL Image">
 </div>
 
-
-[WhatsApp Video 2024-12-11 at 04.47.06_aae5dbad.mp4](..%2F..%2F..%2FAppData%2FLocal%2FPackages%2F5319275A.51895FA4EA97F_cv1g1gvanyjgm%2FTempState%2FEAA32C96F620053CF442AD32258076B9%2FWhatsApp%20Video%202024-12-11%20at%2004.47.06_aae5dbad.mp4)
-
+<div class="etl-card">
+    <!-- Adding a GIF -->
+    <div style="text-align: center; margin-top: 20px;">
+        <img src="WhatsApp Video 2024-12-11 at 04.47.06_4eb625e2.mp4" alt="Success Celebration" style="max-width: 100%; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+    </div>
+</div>
 [Back to Home](index.md)
 
 
