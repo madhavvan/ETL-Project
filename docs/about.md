@@ -127,41 +127,10 @@
 
 
 
-<footer style="position: fixed; bottom: 0; width: 100%; background: black; color: #FFD700; text-align: center; padding: 10px; font-family: 'Arial', sans-serif;">
-    <p>© 2024 ETL Project Team. All Rights Reserved.</p>
-    <a href="gift.html" 
-        id="specialLink"
-        style="color: #FFD700; text-decoration: none; font-size: 1.2rem; animation: cry 1s infinite; font-weight: bold;">
-         Click me! 
-    </a>
-    <audio id="crySound" src="crying-sound.mp3" loop></audio>
-</footer>
-
-<script>
-    const link = document.getElementById('specialLink');
-    const audio = document.getElementById('crySound');
-    
-    // Play crying sound
-    audio.play();
-
-    // Stop sound and animation when the link is clicked
-    link.addEventListener('click', (event) => {
-        audio.pause();
-        audio.currentTime = 0;
-        link.style.animation = 'none';
-    });
-
-    // Define the crying animation
-    const styleSheet = document.styleSheets[0];
-    styleSheet.insertRule(`
-        @keyframes cry {
-            0% { transform: translateY(0); color: #FFD700; }
-            50% { transform: translateY(-10px); color: #FF4500; }
-            100% { transform: translateY(0); color: #FFD700; }
-        }
-    `, styleSheet.cssRules.length);
-</script>
-
+    <footer>
+        <p>© 2024 ETL Project Team. All Rights Reserved.</p>
+        <a href="gift.html" style="color: #FFD700; text-decoration: none;">🎁 Click here!</a>
+    </footer>
 
 </body>
 </html>
